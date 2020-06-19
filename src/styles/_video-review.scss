@@ -1,0 +1,146 @@
+/* ------------ video-review --------------- */
+section-2 {    
+	display: flex;
+	align-items: center;
+	min-height: 100vh;		
+}
+
+.review-wrap {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.title-review {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 20px;
+	@extend h2;
+}
+
+.box-button-review {
+	display: flex;
+	justify-content: center;
+}
+
+.box-button-review input {
+	display: flex;
+	justify-content: center;
+	color: $white;
+	outline: none;
+	margin-top: 60px;
+	padding: 19px 22px;
+	@extend input;	
+	background-color: $orange;
+	font-size: 25px;			
+	&:hover {
+		color: $orange;
+		background-color: $white;
+		border: 1px solid $orange;
+	}		
+}
+
+.video-table{
+	width: 40%;
+	display: flex;
+    justify-content: center;
+	@extend a;
+	&:focus {
+		outline: none;
+	}
+}
+
+/* ------ media query ------ */
+@include television {
+	.title-review {
+		font-size: 36px;
+		margin-bottom: 0px;
+	}	
+	.video-table{
+		width: 40%;
+	}
+}
+@include desktop {
+	.box-button-review input {
+		margin-top: 60px;
+		font-size: 16px;			
+		padding: 15px 20px;			
+	}
+	.video-table{
+		width: 40%;
+	}
+}
+@include laptop {
+	.title-review {
+		font-size: 36px;
+		margin-bottom: 0px;
+	}
+	.video-table{
+		width: 36%;
+	}
+	.box-button-review input {
+		margin-top: 60px;
+		font-size: 16px;			
+		padding: 15px 20px;			
+	}
+}
+@include tablet {
+	.title-review {
+		font-size: 28px;
+		padding-top: 40px;
+		margin-bottom: 0px;
+	}
+	.video-table{
+		width: 50%;
+	}
+	.box-button-review input {
+		margin-top: 60px;
+		font-size: 16px;			
+		padding: 15px 20px;			
+	}
+}
+@include tablet-mini {
+	.title-review {
+		font-size: 24px;
+		padding-top: 0;
+		margin-bottom: 0px;
+	}
+	.video-table{
+		width: 50%;
+	}
+	.box-button-review input {
+		margin-top: 40px;
+		font-size: 14px;
+		padding: 13px 13px;			
+	}
+}
+
+@include phone {
+	.title-review {
+		font-size: 24px;
+		padding-top: 0;
+		margin-bottom: 0px;
+	}
+	.video-table{
+		width: 50%;
+	}
+	.box-button-review input {
+		margin-top: 30px;
+	    font-size: 12px;
+	    padding: 7px 8px;			
+	}
+}
+@include iphone-5 {
+	.title-review {
+		font-size: 24px;
+		padding-top: 0;
+		margin-bottom: 0px;
+	}
+	.video-table{
+		width: 50%;
+	}
+	.box-button-review input {
+		margin-top: 30px;
+	    font-size: 12px;
+	    padding: 7px 8px;			
+	}
+}

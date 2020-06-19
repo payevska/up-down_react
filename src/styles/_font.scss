@@ -1,0 +1,86 @@
+
+
+$extrabold: 800;
+$bold: 700;
+$medium-plus: 600;
+$medium: 500;
+$regular: 400;
+$light: 300;
+
+@font-face {
+    font-family: 'Archivo Narrow', sans-serif;
+    src: url('/src/fonts/ArchivoNarrow/Archivo-Narrow-Regular.eot');
+    src: url('/src/fonts/ArchivoNarrow/Archivo-Narrow-Regular.eot') format('embedded-opentype'),
+         url('/src/fonts/ArchivoNarrow/Archivo-Narrow-Regular.woff2') format('woff2'),
+         url('/src/fonts/ArchivoNarrow/Archivo-Narrow-Regular.woff') format('woff'),
+         url('/src/fonts/ArchivoNarrow/ArchivoNarrow-Regular.ttf') format('truetype'),
+         url('/src/fonts/ArchivoNarrow/Archivo-Narrow-Regular.svg#PT_SerifWebBold') format('svg');
+    font-style: normal;
+    font-weight: $regular;     
+}
+
+@font-face {
+    font-family: 'Judson', serif;
+    src: url('/src/fonts/Judson/Judson-Regular.eot');
+    src: url('/src/fonts/Judson/Judson-Regular.eot') format('embedded-opentype'),
+         url('/src/fonts/Judson/Judson-Regular.woff2') format('woff2'),
+         url('/src/fonts/Judson/Judson-Regular.woff') format('woff'),
+         url('/src/fonts/Judson/Judson-Regular.ttf') format('truetype'),
+         url('/src/fonts/Judson/Judson-Regular.svg#PT_SansWebBold') format('svg');
+    font-style: normal;
+    font-weight: $regular;
+}
+
+@font-face {
+    font-family: 'Nunito Sans', sans-serif;
+    src: url('/src/fonts/NunitoSans/NunitoSans-Regular.eot');
+    src: url('/src/fonts/NunitoSans/NunitoSans-Regular.eot') format('embedded-opentype'),
+         url('/src/fonts/NunitoSans/NunitoSans-Regular.woff2') format('woff2'),
+         url('/src/fonts/NunitoSans/NunitoSans-Regular.woff') format('woff'),
+         url('/src/fonts/NunitoSans/NunitoSans-Regular.ttf') format('truetype'),
+         url('/src/fonts/NunitoSans/NunitoSans-Regular.svg#PT_SansWebBold') format('svg');
+    font-style: normal;
+    font-weight: $regular;
+}
+
+/*
+<i class="fas fa-chevron-circle-up"></i> 
+<i class="fas fa-caret-up"></i>
+<i class="fas fa-caret-down"></i>
+<i class="fas fa-chevron-down"></i>
+<i class="fas fa-chevron-up"></i>
+<i class="fas fa-play"></i>
+<i class="fas fa-redo-alt"></i>
+<i class="fas fa-sort"></i>
+<i class="fas fa-sync-alt"></i>
+<i class="fas fa-angle-double-down"></i>
+<i class="fas fa-angle-down"></i>
+<i class="fas fa-angle-left"></i>
+<i class="fas fa-angle-right"></i>
+<i class="fas fa-angle-up"></i>
+<i class="fas fa-arrows-alt-h"></i>
+<i class="fas fa-exchange-alt"></i>
+<i class="far fa-hand-point-right"></i>
+<i class="far fa-hand-point-left"></i>
+<i class="fas fa-circle"></i>
+<i class="far fa-circle"></i>
+<i class="fas fa-pause"></i>
+<i class="far fa-play-circle"></i>
+<i class="fas fa-play-circle"></i>
+<i class="fas fa-video"></i>
+<i class="fas fa-expand"></i>
+<i class="fas fa-volume-up"></i>
+<i class="fas fa-volume-mute"></i>
+<i class="fas fa-phone"></i>
+<i class="far fa-envelope"></i>
+<i class="far fa-clock"></i>
+<i class="fas fa-pencil-ruler"></i>
+<i class="fas fa-phone-alt"></i>
+<i class="fas fa-desktop"></i>
+<i class="fas fa-keyboard"></i>
+<i class="fas fa-laptop"></i>
+<i class="fas fa-mouse"></i>
+<i class="fas fa-print"></i>
+<i class="fas fa-image"></i>
+<i class="fab fa-instagram"></i>
+ */
