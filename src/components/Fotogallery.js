@@ -20,12 +20,12 @@ function Fotogallery() {
 							<div className="fotogallery-gallery">
 								<div className="col-6 col-sm-6 col-md-4 col-lg-3 fotogallery-gallery__picture">
 									<Link to="images/gallery/picture1-desktop.png" data-fancybox="gallery">
-										<img class="img-fluid" src="images/gallery/picture1-desktop.png" alt="table-foto"/>
+										<img className="img-fluid" src="images/gallery/picture1-desktop.png" alt="table-foto"/>
 									</Link>	
 								</div>
 								<div className="col-6 col-sm-6 col-md-4 col-lg-3 fotogallery-gallery__picture">
 									<a data-fancybox="gallery" href="images/gallery/picture2-desktop.png">
-										<img class="img-fluid" src="images/gallery/picture2-desktop.png" alt="table-foto"/>
+										<img className="img-fluid" src="images/gallery/picture2-desktop.png" alt="table-foto"/>
 									</a>
 								</div>
 								<div className="col-6 col-sm-6 col-md-4 col-lg-3 fotogallery-gallery__picture">

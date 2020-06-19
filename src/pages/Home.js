@@ -1,7 +1,6 @@
 import React from 'react'
 import {Container} from 'react-bootstrap';
 import iconDown from '../images/icons/button-down-home.png';
-
 import { Link } from 'react-router-dom';
 import '../styles/style.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -31,7 +30,7 @@ function Home() {
 					</div>
 					<div className="home__home-overlay">
 						<input type="button" value="3D обзор" onClick='location.href="#Video-review"'/>
-						<Link to="#about" id="scroll-home" className="scroll-link">
+						<Link to="/#about" id="scroll-home" className="scroll-link">
 							{element}
 							<img src={iconDown} alt="button-down" className="scroll-link__link-arrow"/>
 						</Link>

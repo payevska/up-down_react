@@ -3,10 +3,13 @@ import {Container} from 'react-bootstrap';
 //import { Navbar } from 'react-bootstrap';
 import logo from '../images/logo/up-and-down_logotype.png';
 import { Link } from 'react-router-dom';
-import '../styles/_header.scss';
+//import '../styles/_header.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+//import TablesUpDown from '../pages/TablesUpDown';
+//import logoToHome from '../pages/Home'
 
 class Navbar extends Component {
+    
     render() {
         const elementCarpetDown = <FontAwesomeIcon icon={['fas', 'caret-down']} /* size="1x" */ className="fa-carpet-down"/>
         const elementPhone = <FontAwesomeIcon icon={['fas', 'phone']} /* size="1x" */ className="fa-phone"/>
@@ -19,30 +22,29 @@ class Navbar extends Component {
 
                                 <ul className="header-nav">
                                     <li>
-                                        <Link to="/#about">Обзор</Link>
+                                        <a href="/#about">Обзор</a>
                                     </li>
                                     <li className="dropdown">
                                         <Link to="/catalog" >Каталог 
-                                            {/* <i clasName="fa fa-caret-down"></i> */}
                                             {elementCarpetDown}
                                         </Link>	
                                         <div className="dropdown-content">
-                                            <Link to="/catalog/tablesupdown">Столы для работы стоя</Link>
+                                            <Link to="/catalog/tablesupdown/">Столы для работы стоя</Link>
                                             <Link to="/catalog/accessories">Аксессуары</Link>
                                         </div>						    	
                                     </li>
                                     <li>
-                                        <Link to="/#blog">Блог</Link>
+                                        <a href="/#blog">Блог</a>
                                     </li>
                                     <li>
-                                        <Link to="/#fotogallery">Галлерея</Link>
+                                        <a href="/#fotogallery">Галлерея</a>
                                     </li>		
                                 </ul>
                                 
                                 <div id="myGambyrger" className="col col-sm burger-menu">
-                                    <Link to="#" className="burger-menu__burger-button">
+                                    <a href="myGambyrger" className="burger-menu__burger-button">
                                         <span className="burger-menu__lines"></span>
-                                    </Link>
+                                    </a>
                                     <div className="burger-menu__burger-nav">
                                         <ul className="burger-list">
                                             <li className="pop">
@@ -88,11 +90,10 @@ class Navbar extends Component {
                                         <Link to="/delivery">Доставка</Link>
                                     </li>
                                     <li>
-                                        <Link to="/footer" className="phone-wrap">
-                                            {/* <i className="fas fa-phone"></i> */}
+                                        <a href="#footer" className="phone-wrap">
                                             {elementPhone}
                                             <div className="phone-wrap__number-phone">050-922-33-76</div>
-                                        </Link>
+                                        </a>
                                     </li>
                                 </ul>
                             </div>					

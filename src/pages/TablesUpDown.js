@@ -2,6 +2,9 @@ import React from 'react'
 import {Container} from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import '../styles/style.scss';
+import fotoActuator from '../images/tables/actuator/table-actuator-desktop.png'
+import fotoComputer from '../images/tables/computer/table-computer-desktop.png'
+import fotoLaptop from '../images/tables/laptop/Table-laptop2.png'
 
 
 function TablesUpDown() {
@@ -18,8 +21,8 @@ function TablesUpDown() {
 							<div class="collection-box">
 								<div class="col-sm-6 collection-product">
 
-									<Link to="up-down-actuator.html" class="collection-product__unit">
-										<img class="foto-unit1" src="images/tables/actuator/table-actuator-desktop.png" alt="block-foto"/>				
+									<Link to="tablesupdown/updownactuator" class="collection-product__unit">
+										<img class="foto-unit1" src={fotoActuator} alt="block-foto"/>				
 										<div class="unit-name">
 											<div class="unit-name-price">
 											Стол для работы стоя <span class="unit-name-special">Up-down actuator</span>
@@ -33,7 +36,7 @@ function TablesUpDown() {
 								<div class="col-sm-6 collection-product">
 
 									<Link to="up-down-computer.html" class="collection-product__unit">
-										<img class="foto-unit2" src="images/tables/computer/table-computer-desktop.png" alt="block-foto"/>				
+										<img class="foto-unit2" src={fotoComputer} alt="block-foto"/>				
 										<div class="unit-name">
 											<div class="unit-name-price">
 											Стол для работы стоя <span class="unit-name-special">Up-down computer</span>
@@ -47,7 +50,7 @@ function TablesUpDown() {
 								<div class="col-sm-6 collection-product">
 
 									<Link to="up-down-laptop.html" class="collection-product__unit">
-										<img class="foto-unit3" src="images/tables/laptop/Table-laptop2.png" alt="block-foto"/>				
+										<img class="foto-unit3" src={fotoLaptop} alt="block-foto"/>				
 										<div class="unit-name">
 											<div class="unit-name-price">
 											Стол для работы стоя <span class="unit-name-special">Up-down laptop</span>

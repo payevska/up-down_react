@@ -8,38 +8,36 @@ import fotoAccessories from '../images/accessory/pen-holder.png';
 function Catalog() {
 	return (
 		<>
-			<section id="catalog" class="catalog">
-				<div class="container">
-					<div class="row">
-						<div class="col col-sm catalog-wrap">
-							<div class="title-section">
-								<h2 class="title-section__title-topic">Каталог</h2>
-								<div class="title-section__title-border"></div>
+			<div id="catalog" className="catalog">
+				<div className="container">
+					<div className="row">
+						<div className="col col-sm catalog-wrap">
+							<div className="title-section">
+								<h2 className="title-section__title-topic">Каталог</h2>
+								<div className="title-section__title-border"></div>
 							</div>	
-							<div class="catalog-list">
-								<div class="col-sm-6 collection">
-									<Link to="/catalog/tablesupdown" class="collection__type">
+							<div className="catalog-list">
+								<div className="col-sm-6 collection">
+									<Link to="/catalog/tablesupdown" className="collection__type">
 										<img src={fotoTableForWorkUp} alt="table-foto"/>				
-										<div class="type-name">
+										<div className="type-name">
 											Столы для работы стоя
 										</div>
 									</Link>
 								</div>
-								<div class="col-sm-6 collection">
-
-									<Link to="/catalog/accessories" class="collection__type">
+								<div className="col-sm-6 collection">
+									<Link to="/catalog/accessories" className="collection__type">
 										<img src={fotoAccessories} alt="table-foto"/>				
-										<div class="type-name">
+										<div className="type-name">
 											Аксессуары
 										</div>
 									</Link>
 								</div>
-								
 							</div>									
 						</div>
 					</div>			
 				</div>		
-			</section>
+			</div>
 		</>
 	)
 }

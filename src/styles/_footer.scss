@@ -1,6 +1,6 @@
 //@import './style.scss';
 /* ------------ footer --------------- */
-footer {
+.footer {
 	display: flex;
 	align-items: center;
 	background-color: $blue-grey;
@@ -307,7 +307,7 @@ footer {
 	.footer-input {
 		font-size: 16px;
 	}
-	footer {		
+	.footer {		
 		padding-top: 0;
 	}
 }
@@ -342,7 +342,7 @@ footer {
 	.footer-input {
 		font-size: 16px;
 	}
-	footer {		
+	.footer {		
 		padding-top: 0;
 	}	
 }
