@@ -25,19 +25,19 @@ section-1 {
 	    background: rgba(130, 136, 147, 0.85);
 	    opacity: 0;
 	    visibility: hidden;
-	    input {
-				@extend input;
-				display: flex;
-				margin-top: 100px;
-				&:hover {
-					color: $white;
-					background-color: $orange;
-					transition: 1s;
-				}				
-			}
 	}
 }
 
+.input-link {
+	@extend input;
+	display: flex;
+	margin-top: 100px;
+	&:hover {
+		color: $white;
+		background-color: $orange;
+		transition: 1s;
+	}				
+}
 
 .home:hover .home__home-overlay,
 .home:active .home__home-overlay {
@@ -158,7 +158,7 @@ section-1 {
 			}
 		}	
 	}
-	.home__home-overlay input {
+	.input-link {
 		font-size: 16px;			
 		padding: 15px 45px;
 	}
@@ -196,7 +196,7 @@ section-1 {
 			}
 		}	
 	}
-	.home__home-overlay input {
+	.input-link {
 		font-size: 16px;			
 		padding: 15px 45px;
 	}
@@ -229,7 +229,7 @@ section-1 {
 			}
 		}	
 	}
-	.home__home-overlay input {
+	.input-link {
 		font-size: 16px;			
 		padding: 15px 45px;
 	}
@@ -251,7 +251,7 @@ section-1 {
 			}
 		}	
 	}
-	.home__home-overlay input {
+	.input-link {
 		font-size: 16px;			
 		padding: 13px 31px;
 	}
@@ -288,7 +288,7 @@ section-1 {
 			}
 		}	
 	}
-	.home__home-overlay input {
+	.input-link {
 		font-size: 12px;			
 		padding: 8px 27px;
 	}
@@ -322,7 +322,7 @@ section-1 {
 			}
 		}	
 	}
-	.home__home-overlay input {
+	.input-link {
 		font-size: 12px;			
 		padding: 8px 27px;
 	}

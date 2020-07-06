@@ -7,7 +7,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 function Home() {
     const element = <FontAwesomeIcon icon={['fas', 'circle']} size="5x" />
-
     return (
         <>
 			<section-1 id="home">
@@ -25,7 +24,10 @@ function Home() {
 						</div>	
 					</div>
 					<div className="home__home-overlay">
-						<input type="button" value="3D обзор" onClick='location.href="#Video-review"'/>
+					<a href="/#Video-review" className="input-link">
+					3D обзор
+					</a>
+						{/* <input type="button" value="3D обзор" /> */}
 						<a href="/#about" id="scroll-home" className="scroll-link">
 							{element}
 							<img src={iconDown} alt="button-down" className="scroll-link__link-arrow"/>
