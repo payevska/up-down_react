@@ -2,6 +2,7 @@ import React from 'react'
 import {Container} from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import '../styles/style.scss';
+import Footer from '../components/Footer';
 
 
 function UpDownLaptop() {

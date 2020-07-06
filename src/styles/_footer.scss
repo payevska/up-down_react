@@ -4,7 +4,8 @@
 	display: flex;
 	align-items: center;
 	background-color: $blue-grey;
-	min-height: 100vh;
+	//min-height: 100vh;
+	height: 100vh;
 	@media (min-width: 1440px) {
 	 	padding-top: 0;
 	}

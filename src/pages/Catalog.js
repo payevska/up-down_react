@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import '../styles/style.scss';
 import fotoTableForWorkUp from '../images/tables/actuator/table-actuator-desktop.png';
 import fotoAccessories from '../images/accessory/pen-holder.png';
+import ProductList from '../components/ProductList';
 
 function Catalog() {
 	return (
@@ -17,22 +18,16 @@ function Catalog() {
 								<div className="title-section__title-border"></div>
 							</div>	
 							<div className="catalog-list">
-								<div className="col-sm-6 collection">
-									<Link to="/catalog/tablesupdown" className="collection__type">
-										<img src={fotoTableForWorkUp} alt="table-foto"/>				
-										<div className="type-name">
-											Столы для работы стоя
-										</div>
-									</Link>
-								</div>
-								<div className="col-sm-6 collection">
+								<ProductList/>
+								{/* <div className="col-sm-6 collection">
+
 									<Link to="/catalog/accessories" className="collection__type">
 										<img src={fotoAccessories} alt="table-foto"/>				
 										<div className="type-name">
 											Аксессуары
 										</div>
 									</Link>
-								</div>
+								</div> */}
 							</div>									
 						</div>
 					</div>			

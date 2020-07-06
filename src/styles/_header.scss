@@ -4,7 +4,8 @@
 /* ----- header ----- */
 header { 
     position: fixed;
-    z-index: 101;
+	z-index: 101;
+	top: 0;
     width: 100%;    
     background: $white;
     padding-top: 3px;

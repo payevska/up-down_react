@@ -25,7 +25,7 @@ class Navbar extends Component {
                                         <a href="/#about">Обзор</a>
                                     </li>
                                     <li className="dropdown">
-                                        <Link to="/catalog" >Каталог 
+                                        <Link to="/catalog/" >Каталог 
                                             {elementCarpetDown}
                                         </Link>	
                                         <div className="dropdown-content">
@@ -87,10 +87,10 @@ class Navbar extends Component {
                             <div className="col-5 col-sm-5 menu-active">
                                 <ul className="header-nav header-nav-front">
                                     <li className="behind">
-                                        <Link to="/delivery">Доставка</Link>
+                                        <Link to="/delivery/">Доставка</Link>
                                     </li>
                                     <li>
-                                        <a href="#footer" className="phone-wrap">
+                                        <a href="/#footer" className="phone-wrap">
                                             {elementPhone}
                                             <div className="phone-wrap__number-phone">050-922-33-76</div>
                                         </a>

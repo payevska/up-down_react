@@ -1,41 +1,35 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import { Route, Switch } from "react-router-dom";
 import './styles/style.scss';
 import './fontawesome';
 import Navbar from './components/Navbar';
 import Error from './pages/Error';
-//import Delivery from './pages/Delivery';
+import Delivery from './pages/Delivery';
 import Catalog from './pages/Catalog';
-//import Accessories from './pages/Accessories';
-import Home from './pages/Home';
+import Accessories from './pages/Accessories';
+import Main from './pages/Main';
 import TablesUpDown from './pages/TablesUpDown';
 import UpDownActuator from './pages/UpDownActuator';
-import About from './components/About';
-import VideoReview from './components/VideoReview';
-import Blog from './components/Blog';
-import Fotogallery from './components/Fotogallery';
 import Footer from './components/Footer';
-
+import Product from './components/Product';
+import $ from "jquery";
 
 function App() {
   return (
     <>
-			<Navbar/>
-      <Switch>
-        <Route exact path="/" component={Home}/>
-        <Route exact path="/#about" component={About}/>
-        <Route exact path="/#videoreview" component={VideoReview}/>
-        <Route exact path="/#blog" component={Blog}/>
-        <Route exact path="/#fotogallery" component={Fotogallery}/>
-        <Route exact path="/catalog/" component={Catalog}/>
-        {/* <Route exact path="/delivery/" component={Delivery}/> */}
-        <Route exact path="/catalog/:slug" component={TablesUpDown}/>
-        {/* <Route exact path="/catalog/accessories/" component={Accessories}/> */}
-        {/* <Route exact path="/catalog/tablesupdown/" component={TablesUpDown}/> */}
-        <Route exact path="/catalog/tablesupdown/:slug" component={UpDownActuator}/>
-        <Route component={Error}/>
-      </Switch>
-      <Footer/>
+        <Navbar/>
+        <Switch>
+          <Route exact path="/" component={Main}/>
+          <Route path="/catalog/" component={Catalog}/>
+          <Route path="/delivery/" component={Delivery}/>
+          <Route path="/catalog/tables/:slug" component={Product}/>
+          <Route component={Error}/>
+                {/* <Route exact path="/catalog/accessories/" component={Accessories}/> */}
+                {/* <Route exact path="/catalog/accessories/:id" component={Accessories}/> */}
+                {/* <Route exact path="/catalog/tablesupdown/" component={TablesUpDown}/> */}
+                {/* <Route exact path="/catalog/tablesupdown/:id" component={UpDownActuator}/> */}
+        </Switch>
+        <Footer/>
     </>
   );
 }
