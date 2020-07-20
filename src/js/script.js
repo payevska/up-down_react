@@ -1,6 +1,9 @@
+import $ from 'jquery'
+
+
 $(document).ready(function(){   
 
-    const currentLocation = location.href;
+    const currentLocation = "/public/index.html";
     const menuItem = document.querySelectorAll('.header-nav li a');
     const menuLength = menuItem.length;
 
@@ -50,7 +53,7 @@ $(document).ready(function(){
 
     /*carousel....  https://www.youtube.com/watch?v=casgv9Y8I1w&t=28s*/
 
-    document.getElementById('slider-top').onclick = sliderTop;
+    /* document.getElementById('slider-top').onclick = sliderTop;
     var top = -360;
 
     function sliderTop(){
@@ -72,7 +75,7 @@ $(document).ready(function(){
             top = 0;
         }
         polosa.style.top = top + 'px';
-    }
+    } */
 
     /*image portfolio-left.... http://www.web.cofp.ru/vse-o-sajtakh/
     sozdanie-sajta/javascript/jquery/154-uvelichenie-izobrazheniya-pri-nazhatii-na-nego*/ 

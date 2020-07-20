@@ -18,20 +18,18 @@ import imgTC3 from "./images/tables/computer/table-computer-big3.png";
 import imgTC4 from "./images/tables/computer/table-computer-big4.png";
 import imgTC5 from "./images/tables/computer/table-computer-big5.png";
 import imgTC6 from "./images/tables/computer/table-computer-big6.png";
-import imgTC7 from "./images/tables/computer/table-computer-big7.png";
-import imgTC8 from "./images/tables/computer/table-computer-big8.png";
 import imgTC9 from "./images/tables/computer/table-computer-charaktaristic1.png";
 import imgTC10 from "./images/tables/computer/table-computer-charaktaristic2.png";
 
 import tableLaptop from "./images/tables/laptop/Table-laptop2.png";
-import imgTL1 from "./images/tables/computer/table-laptop-big1.png";
-import imgTL2 from "./images/tables/computer/table-laptop-big2.png";
-import imgTL3 from "./images/tables/computer/table-laptop-big3.png";
-import imgTL4 from "./images/tables/computer/table-laptop-big4.png";
-import imgTL5 from "./images/tables/computer/table-laptop-big5.png";
-import imgTL6 from "./images/tables/computer/table-laptop-big6.png";
-import imgTL7 from "./images/tables/computer/table-laptop-big7.png";
-import imgTL8 from "./images/tables/computer/table-laptop-big8.png";
+import imgTL1 from "./images/tables/laptop/table-laptop-big1.png";
+import imgTL2 from "./images/tables/laptop/table-laptop-big2.png";
+import imgTL3 from "./images/tables/laptop/table-laptop-big3.png";
+import imgTL4 from "./images/tables/laptop/table-laptop-big4.png";
+import imgTL5 from "./images/tables/laptop/table-laptop-big5.png";
+import imgTL6 from "./images/tables/laptop/table-laptop-big6.png";
+import imgTL7 from "./images/tables/laptop/table-laptop-big7.png";
+import imgTL8 from "./images/tables/laptop/table-laptop-big8.png";
 import imgTL9 from "./images/tables/laptop/table-laptop-charaktaristic2.png";
 import imgTL10 from "./images/tables/laptop/table-laptop-charaktaristic1.png";
 
@@ -234,20 +232,6 @@ export default [
                     fields: {
                         file: {
                             url: imgTC6
-                        }
-                    }
-                },
-                {
-                    fields: {
-                        file: {
-                            url: imgTC7
-                        }
-                    }
-                },
-                {
-                    fields: {
-                        file: {
-                            url: imgTC8
                         }
                     }
                 },

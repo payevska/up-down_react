@@ -1,22 +1,23 @@
 import React from 'react'
 import {useContext} from 'react'
 import {ProductContext} from '../context'
-import Title from './Title'
+import Title from '../components/Title'
 
 // get all unique values
 const getUnique = (items,value) => {
     return [...new Set(items.map(item => item[value]))]
-}
+};
 
-function ProductFilter({products}) {
+const ProductsFilter = ({products}) => {
+    //react hooks
     const context = useContext(ProductContext);
     const {
         handleChange,
         type,
-        testing,
         price,
         minPrice,
-        maxPrice
+        maxPrice,
+        adjustHeight
     } = context;
     //get unique types
     let types = getUnique(products,'type');
@@ -32,11 +33,11 @@ function ProductFilter({products}) {
     });
     return (
         <section className="filter-container">
-            <Title title="search rooms"/>
+            <Title title="Фильтр"/>
                 <form action="" className="filter-form">
 
                     {/* select type */}
-                    <div className="form-group">
+                    <div className="col-sm-4 form-group">
                         <label htmlFor="type">тип товара</label>
                         <select 
                             name="type" 
@@ -48,10 +49,10 @@ function ProductFilter({products}) {
                             {types}
                         </select>
                     </div>
-                    {/* end select type */}
+                    {/* end of select type */}
 
                     {/* product price */}
-                    <div className="form-group">
+                    <div className="col-sm-4 form-group">
                         <label htmlFor="price">
                             цена {price} &#8372;
                         </label>
@@ -62,31 +63,31 @@ function ProductFilter({products}) {
                             max={maxPrice} 
                             id="price" 
                             value={price}
-                            className="form-control"
+                            className="form-control slider"
                             onChange={handleChange}
                         />
                     </div>
                     {/* end of product price */}
 
-                    {/* extras */}
-                    <div className="form-group">
+                    {/* adjustHeight */}
+                    <div className="col-sm-4 form-group input-checkbox">
                         <div className="product-extra">
                             <input 
-                                type="checkbox" name="testing"
-                                id="testing"
-                                checked={testing}
+                                type="checkbox" name="adjustHeight"
+                                id="adjustHeight"
+                                checked={adjustHeight}
                                 onChange={handleChange}
                             />
-                            <label htmlFor="testing">
-                                Бесплатное тестирование для Харькова
+                            <label htmlFor="adjustHeight">
+                                Настройка высоты
                             </label>
                         </div>
                     </div>
-                    {/* end of extras */}
+                    {/* end of adjustHeight */}
 
                 </form>
         </section>
     )
 }
 
-export default ProductFilter
+export default ProductsFilter

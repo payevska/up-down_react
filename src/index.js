@@ -4,13 +4,16 @@ import { BrowserRouter as Router } from "react-router-dom";
 import './fontawesome';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import {ProductProvider} from './context';
 
 ReactDOM.render(
+  <ProductProvider>
     <Router>
       <React.StrictMode>
         <App />
       </React.StrictMode>
-    </Router>,
+    </Router>
+  </ProductProvider>,
   document.getElementById('root')
 );
 

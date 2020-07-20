@@ -3,6 +3,7 @@ import {Container} from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import '../styles/style.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import FormContact from './FormContact';
 /* import ; */
 
 
@@ -19,14 +20,7 @@ class Footer extends Component {
                             <div className="col-sm footer-block">
                                 <div className="form-contact">
                                     <div className="form-contact__form-title">Напишите нам</div>
-                                                            
-                                    <form id="formMessage" action="mail.php" method="POST" className="form-contact__form-content">
-                                        <input id="mail-name" type="text" className="form-contact__form-content_form-name footer-input" placeholder="Имя"/>
-                                        <input id="mail-email" type="email" className="form-contact__form-content_form-email footer-input" placeholder="Электронный адресс"/>
-                                        <textarea id="mail-message" name="message" className="form-contact__form-content_form-message footer-input" placeholder="Сообщение"></textarea>
-                                        <button id="mail-submit" type="submit" className="form-contact__form-content_form-submit">Отправить</button>
-                                        <div className="form-message"></div>
-                                    </form>
+                                    <FormContact/>                        
                                 </div>			
                         
                                 <div className="footer-wrap">

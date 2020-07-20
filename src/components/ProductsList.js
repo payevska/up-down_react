@@ -1,7 +1,7 @@
 import React from 'react'
 import Product from './Product';
 
-export default function ProductList({products}) {
+const  ProductsList = ({products}) => {
 
     if(products.length === 0) {
         return (
@@ -20,4 +20,6 @@ export default function ProductList({products}) {
             </div>
         </section>
     );
-}
+};
+
+export default ProductsList;

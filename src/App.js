@@ -5,14 +5,10 @@ import './fontawesome';
 import Navbar from './components/Navbar';
 import Error from './pages/Error';
 import Delivery from './pages/Delivery';
-import Catalog from './pages/Catalog';
-import Accessories from './pages/Accessories';
 import Main from './pages/Main';
-import TablesUpDown from './pages/TablesUpDown';
-import UpDownActuator from './pages/UpDownActuator';
 import Footer from './components/Footer';
-import Product from './components/Product';
-import $ from "jquery";
+import SelectionProduct from './pages/SelectionProduct';
+import Products from './pages/Products';
 
 function App() {
   return (
@@ -20,9 +16,9 @@ function App() {
         <Navbar/>
         <Switch>
           <Route exact path="/" component={Main}/>
-          <Route path="/catalog/" component={Catalog}/>
+          <Route path="/catalog/" component={Products}/>
           <Route path="/delivery/" component={Delivery}/>
-          <Route path="/catalog/tables/:slug" component={Product}/>
+          <Route path="/catalog/:slug" component={SelectionProduct}/>
           <Route component={Error}/>
                 {/* <Route exact path="/catalog/accessories/" component={Accessories}/> */}
                 {/* <Route exact path="/catalog/accessories/:id" component={Accessories}/> */}

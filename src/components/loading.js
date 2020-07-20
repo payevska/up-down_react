@@ -1,7 +1,7 @@
 import React from 'react'
 import loadingGif from '../images/gif/loading-arrow.gif'
 
-export default function loading() {
+const Loading = () => {
     return (
         <div className="loading">
             <h4>products data loading...</h4>
@@ -9,3 +9,4 @@ export default function loading() {
         </div>
     )
 }
+export default Loading;

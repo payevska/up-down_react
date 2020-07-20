@@ -18,7 +18,7 @@ if (isset($_POST['submit'])) {
 		$headers = 'From: '.$name."\r\n".
 		'Reply-To: '.$email."\r\n" .
 		'X-Mailer: PHP/' . phpversion();
-		@mail('sales@und.com.ua', 'UND: Вопрос из формы', $message, $headers);
+		@mail(/* 'sales@und.com.ua' */ 'petrikjul@gmail.com', 'UND: Вопрос из формы', $message, $headers);
 	}
 } else {
 	echo "There was an error!";

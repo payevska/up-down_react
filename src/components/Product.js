@@ -1,21 +1,36 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
-import fotoTableForWorkUp from '../images/tables/actuator/table-actuator-desktop.png';
+import defaultImg from '../images/tables/actuator/table-actuator-desktop.png';
+import PropTypes from 'prop-types';
+
 
 function Product({product}) {
     const{name,slug,images,price} = product;
     return (
         <>
-            <div className="col-sm-6 collection">
-                <Link to="/catalog/tablesupdown" className="collection__type">
-                    <img src={fotoTableForWorkUp} alt="table-foto"/>				
-                    <div className="type-name">
-                        Столы для работы стоя
+            <Link to={`/catalog/${slug}`} className="collection-product__unit">
+                <img src={images[0] || defaultImg} alt="product"/>				
+                <div className="unit-name">
+                    <div className="unit-name-price">
+                    {name}
                     </div>
-                </Link>
-            </div>
+                    <div className="unit-name-price">
+                        <span className="price-info-spec">{price} &#8372;</span>
+                    </div>
+                </div>	
+            </Link>
         </>
     );
 }
+
+Product.propTypes = {
+    product: PropTypes.shape({
+        name: PropTypes.string.isRequired,
+        slug: PropTypes.string.isRequired,
+        images: PropTypes.arrayOf(PropTypes.string).isRequired,
+        price: PropTypes.number.isRequired
+    })
+}; 
+
 
 export default Product

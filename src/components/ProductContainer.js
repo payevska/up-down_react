@@ -1,13 +1,14 @@
 import React from 'react'
 import {withProductConsumer} from '../context'
-import ProductsFilter from './ProductFilter'
-import ProductsList from './ProductList'
 import Loading from './Loading'
+import ProductsList from './ProductsList'
+import ProductsFilter from './ProductsFilter'
 
 function ProductContainer({context}) {
+    
     const {loading,sortedProducts,products} = context;
     if(loading) {
-        return <loading/>
+        return <Loading/>
     }
     return (
         <>
