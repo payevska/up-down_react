@@ -10,7 +10,7 @@ const Products = () => {
 			<div id="catalog" className="catalog">
 				<div className="container">
 					<div className="row">
-						<div className="col col-sm catalog-wrap">
+						<div className="catalog-wrap">
 							<div className="title-section">
 								<h2 className="title-section__title-topic">Каталог</h2>
 								<div className="title-section__title-border"></div>

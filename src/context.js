@@ -30,7 +30,6 @@ class ProductProvider extends Component {
             //featuredProducts,
             sortedProducts: products,
             loading: false,
-            //
             price: maxPrice,
             maxPrice,
         })
@@ -55,14 +54,11 @@ class ProductProvider extends Component {
     handleChange = event => {
         const target = event.target;
         const value = target.type === 'checkbox' ? target.checked : target.value;
-        const name = event.target.name;
-        this.setState(
-            {
+        const name = target.name;
+        this.setState({
                 [name]: value
-            },
-            this.filterProducts
-        );
-    };
+            },this.filterProducts)
+    }
 
     filterProducts = () => {
         let {
@@ -98,12 +94,12 @@ class ProductProvider extends Component {
     render() {
         return (
             <ProductContext.Provider 
-            value={{ 
-                ...this.state,  
-                getProduct: this.getProduct,
-                handleChange: this.handleChange 
-                }}>
-                {this.props.children}
+                value={{ 
+                    ...this.state,  
+                    getProduct: this.getProduct,
+                    handleChange: this.handleChange 
+                    }}>
+                    {this.props.children}
             </ProductContext.Provider>
         );
     }
@@ -111,21 +107,18 @@ class ProductProvider extends Component {
 
 const ProductConsumer = ProductContext.Consumer;
 
+export { ProductProvider, ProductConsumer, ProductContext };
 
 export function withProductConsumer(Component) {
-
-
     return function ComsumerWrapper(props) {
-        
         return (
-        <ProductConsumer>
-            {value => <Component {...props} context={value}/>}
-        </ProductConsumer>
+            <ProductConsumer>
+                {value => <Component {...props} context={value}/>}
+            </ProductConsumer>
         );
     };
 }
 
-export { ProductProvider, ProductConsumer, ProductContext };
 
 
 

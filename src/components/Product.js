@@ -8,11 +8,11 @@ function Product({product}) {
     const{name,slug,images,price} = product;
     return (
         <>
-            <Link to={`/catalog/${slug}`} className="collection-product__unit">
+            <Link to={`/catalog/${slug}`} className="col-sm-4 collection-product__unit">
                 <img src={images[0] || defaultImg} alt="product"/>				
                 <div className="unit-name">
                     <div className="unit-name-price">
-                    {name}
+                        {name}
                     </div>
                     <div className="unit-name-price">
                         <span className="price-info-spec">{price} &#8372;</span>

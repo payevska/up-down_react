@@ -36,19 +36,19 @@ import imgTL10 from "./images/tables/laptop/table-laptop-charaktaristic1.png";
 import penHolder from "./images/accessory/pen-holder.png";
 import imgPH1 from "./images/accessory/pen-holder.png";
 
-import penHolderPrism from "./images/accessory/pen-holder.png";
+import penHolderPrism from "./images/accessory/pen-holder-prism1.png";
 import imgPHP1 from "./images/accessory/pen-holder-prism1.png";
 
-import penHolderCircle from "./images/accessory/pen-holder.png";
+import penHolderCircle from "./images/accessory/pen-holder-circle1.png";
 import imgPHC1 from "./images/accessory/pen-holder-circle1.png";
 
-import mobileHolderCubic from "./images/accessory/pen-holder.png";
+import mobileHolderCubic from "./images/accessory/mobile-holder-wood2.png";
 import imgMHC1 from "./images/accessory/mobile-holder-wood2.png";
 
-import mobileHolderCubicSlot from "./images/accessory/pen-holder.png";
+import mobileHolderCubicSlot from "./images/accessory/mobile-holder-wood3.png";
 import imgMHCS1 from "./images/accessory/mobile-holder-wood3.png";
 
-import mobileHolderTron from "./images/accessory/pen-holder.png";
+import mobileHolderTron from "./images/accessory/mobile-holder-metal1.png";
 import imgMHT1 from "./images/accessory/mobile-holder-metal1.png";
 
 

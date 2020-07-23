@@ -1,8 +1,7 @@
 import React from 'react'
 import Product from './Product';
 
-const  ProductsList = ({products}) => {
-
+export default function ProductsList({products}) {
     if(products.length === 0) {
         return (
             <div className="empty-search">
@@ -13,13 +12,12 @@ const  ProductsList = ({products}) => {
 
     return (
         <section className="productslist">
-            <div className="productslist-center">
+            <div className="col col-md productslist-center">
                 {products.map(item => {
                     return <Product key={item.id} product={item}/>;
                 })}
             </div>
         </section>
     );
-};
+}
 
-export default ProductsList;
