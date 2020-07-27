@@ -15,7 +15,7 @@ class ProductProvider extends Component {
         price: 0,
         minPrice: 0,
         maxPrice: 0,
-        adjustHeigh: false,
+        adjustHeigh: false
     };
 
     //getData
@@ -54,7 +54,7 @@ class ProductProvider extends Component {
     handleChange = event => {
         const target = event.target;
         const value = target.type === 'checkbox' ? target.checked : target.value;
-        const name = target.name;
+        const name = event.target.name;
         this.setState({
                 [name]: value
             },this.filterProducts)
@@ -107,8 +107,6 @@ class ProductProvider extends Component {
 
 const ProductConsumer = ProductContext.Consumer;
 
-export { ProductProvider, ProductConsumer, ProductContext };
-
 export function withProductConsumer(Component) {
     return function ComsumerWrapper(props) {
         return (
@@ -118,6 +116,9 @@ export function withProductConsumer(Component) {
         );
     };
 }
+
+export { ProductProvider, ProductConsumer, ProductContext };
+
 
 
 

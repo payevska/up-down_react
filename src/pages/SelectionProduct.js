@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+/* import React, { Component } from 'react'
 import {Container} from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import '../styles/style.scss';
@@ -205,5 +205,5 @@ class SelectionProduct extends Component {
 	}
 }
 
-export default SelectionProduct
+export default SelectionProduct */
 

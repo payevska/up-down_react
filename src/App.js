@@ -7,8 +7,8 @@ import Error from './pages/Error';
 import Delivery from './pages/Delivery';
 import Main from './pages/Main';
 import Footer from './components/Footer';
-import SelectionProduct from './pages/SelectionProduct';
 import Products from './pages/Products';
+import ChosenProduct from './pages/ChosenProduct';
 
 function App() {
   return (
@@ -16,14 +16,10 @@ function App() {
         <Navbar/>
         <Switch>
           <Route exact path="/" component={Main}/>
-          <Route path="/catalog/" component={Products}/>
-          <Route path="/delivery/" component={Delivery}/>
-          <Route path="/catalog/:slug" component={SelectionProduct}/>
+          <Route exact path="/catalog/" component={Products}/>
+          <Route exact path="/delivery/" component={Delivery}/>
+          <Route exact path="/catalog/:slug" component={ChosenProduct}/>
           <Route component={Error}/>
-                {/* <Route exact path="/catalog/accessories/" component={Accessories}/> */}
-                {/* <Route exact path="/catalog/accessories/:id" component={Accessories}/> */}
-                {/* <Route exact path="/catalog/tablesupdown/" component={TablesUpDown}/> */}
-                {/* <Route exact path="/catalog/tablesupdown/:id" component={UpDownActuator}/> */}
         </Switch>
         <Footer/>
     </>

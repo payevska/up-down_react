@@ -68,8 +68,13 @@ export default [
             maxHeight: 475,
             width: 860,
             depth: 650,
+            material: [
+                "сосна",
+                "бук",
+                "дуб"
+            ],
             adjustHeight: true,
-            testing: false,
+            testing: true,
             featured: false,
             description:
                 "Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.",
@@ -175,16 +180,12 @@ export default [
             Width: 860,
             depth: 650,
             weight: "6 кг",
-            material: "фанера 12мм",
+            material: ["фанера 12мм"],
             adjustHeight: true,
             testing: false,
             featured: false,
             description:
                 "Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.",
-            extras: [
-                "Бесплатное тестирование для Харькова",
-                "Бесплатное тестирование для Харькова"
-            ],
             images: [
                 {
                     fields: {
@@ -266,7 +267,7 @@ export default [
             adjustHeightShelf: "от 155мм до 405мм",
             angleDownShelf: 45,
             weight: 3,
-            material: "фанера 12мм",
+            material: ["фанера 12мм"],
             adjustHeight: true,
             testing: false,
             featured: false,

@@ -4,8 +4,10 @@ import defaultImg from '../images/tables/actuator/table-actuator-desktop.png';
 import PropTypes from 'prop-types';
 
 
-function Product({product}) {
+export default function Product({ product }) {
+    
     const{name,slug,images,price} = product;
+    
     return (
         <>
             <Link to={`/catalog/${slug}`} className="col-sm-4 collection-product__unit">
@@ -33,4 +35,3 @@ Product.propTypes = {
 }; 
 
 
-export default Product
