@@ -77,7 +77,7 @@ export default [
             testing: true,
             featured: false,
             description:
-                "Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.",
+                "Данный стол предназначен для комбинированной работы как сидя, так и стоя. Представляемая модель устанавливается на основной рабочий стол. Благодаря своим компактным размерам он легко разместится на Вашем столе даже в небольшом офисе. Расположив на верхней столешнице монитор, а на полке клавиатуру при помощи кнопки Вы можете поднять все необходимое оборудование на комфортную для вас высоту, не прилагая никаких усилий.",
             extras: [
                 "Бесплатное тестирование для Харькова"
             ],
@@ -185,7 +185,7 @@ export default [
             testing: false,
             featured: false,
             description:
-                "Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.",
+                "Эта модель стола изготовлена из мебельной фанеры толщиной 12мм. И состоит из 6 составных частей. Для сборки не нужен никакой инструмент. Достаточно вставить необходимые детали в соответствующие пазы и стол готов к использованию. Нижняя и верхняя полка регулируются в соответствии с Вашим желанием. После работы стол просто разбирается и не занимает в сложенном виде много места.",
             images: [
                 {
                     fields: {
@@ -272,7 +272,7 @@ export default [
             testing: false,
             featured: false,
             description:
-                "Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.",
+                "Данная подставка является трансформером и может использоваться для разных целей: как подставка для ноутбука с регулировкой высоты полки, как подставка под планшет или книгу с наклоном полки в 45 градусов. Так же можно переставить полку вниз под углом 45 градусов и ставить книги для чтения сидя.",
             images: [
                 {
                     fields: {
@@ -367,8 +367,7 @@ export default [
             width: 0,
             radius: 0,
             featured: false,
-            description:
-                "Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo.",
+            description: "",
             images: [
                 {
                     fields: {
@@ -400,8 +399,7 @@ export default [
             width: 0,
             radius: 0,
             featured: false,
-            description:
-                "Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo.",
+            description: "",
             images: [
                 {
                     fields: {
@@ -433,8 +431,7 @@ export default [
             width: 0,
             radius: 0,
             featured: false,
-            description:
-                "Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo.",
+            description: "",
             images: [
                 {
                     fields: {
@@ -464,8 +461,7 @@ export default [
             price: 70,
             size: "0x0x0",
             featured: false,
-            description:
-                "Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo.",
+            description: "",
             images: [
                 {
                     fields: {
@@ -495,8 +491,7 @@ export default [
             price: 70,
             size: "0x0x0",
             featured: false,
-            description:
-                "Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo.",
+            description: "",
             images: [
                 {
                     fields: {
@@ -526,8 +521,7 @@ export default [
             price: 140,
             size: "0x0x0",
             featured: false,
-            description:
-                "Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo.",
+            description: "",
             images: [
                 {
                     fields: {

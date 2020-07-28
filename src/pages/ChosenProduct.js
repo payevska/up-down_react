@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom';
 import '../styles/style.scss';
 import defaultBcg from '../images/tables/actuator/table-actuator-big1.png';
 import {ProductContext} from '../context';
+import Characteristic from '../components/Characteristic';
+import Description from '../components/Description';
 
 
 export default class ChosenProduct extends Component {
@@ -88,7 +90,7 @@ export default class ChosenProduct extends Component {
 												{extras}
 											</div>
 											<div className="portfolio-price__price-review">
-												<span class="price">Срок изготовления:</span> 10-14 рабочих дней.
+												<span className="price">Срок изготовления:</span> 10-14 рабочих дней.
 											</div>
 											<div className="portfolio-price__name-select">Материал столешницы:</div>		
 											<ul className="extras">
@@ -96,12 +98,14 @@ export default class ChosenProduct extends Component {
 													return <li key={index}>- {item}</li>
 												})}
 											</ul>
-											
 											<div className="portfolio-price__price-characteristic">
-												<Link to="#characteristics-actuator">Характеристики</Link>
-											</div>			
+												<a href="#description">Описание</a>
+												<a href="#characteristic">Характеристики</a>
+											</div>
 										</div>
 									</div>
+									<Description/>
+									<Characteristic/>
 								</div>
 							</div>											
 						</div>			
