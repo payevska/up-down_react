@@ -13,9 +13,28 @@ export default class ChosenProduct extends Component {
         super(props);
         this.state = {
             slug: this.props.match.params.slug,
-            defaultBcg
-        }
-    }
+			defaultBcg,
+			showDescription: false,
+			showCharacteristic: false
+		}
+		this.onButtonDescriptionClick = this.onButtonDescriptionClick.bind(this);
+		this.onButtonCharacteristicClick = this.onButtonCharacteristicClick.bind(this);
+	}
+
+	onButtonDescriptionClick() {
+		this.setState(state => ({
+			showDescription: true,
+			showCharacteristic: false
+		}));
+	}
+
+	onButtonCharacteristicClick() {
+		this.setState(state => ({
+			showDescription: false,
+			showCharacteristic: true
+		}));
+	}
+	
     static contextType = ProductContext;
     //componentDidMount() {}
 	render() {
@@ -34,13 +53,13 @@ export default class ChosenProduct extends Component {
         const {
 			name,
 			slug,
-            description,
+           /*  description, */
             price,
 			extras,
 			material,
-            images
+			images,
+			characteristics
         } = product;
-        const [mainImg,...defaultImg] = images;
 		return (
 			<>
 				<section id="up-down-actuator" className="up-down-table">
@@ -60,11 +79,11 @@ export default class ChosenProduct extends Component {
 											<div className="portfolio-left__carousel">
 												<div id="polosa" className="portfolio-left__carousel_carousel-block">		
 													<div className="carousel-foto">
-														<img src={defaultImg.map((item,index) => {
+														 <img src={images.map((item,index) => {
 															return (
 																<img key={index} src={item} alt={name}/>
 															);
-														})} 
+														})}
 														alt="desk" className="carousel-foto__fotoProject"/>
 													</div>
 												</div>
@@ -74,7 +93,7 @@ export default class ChosenProduct extends Component {
 											</div>
 										</div>
 										<div className="col-md-5 portfolio-right">
-											<img src={mainImg || this.state.defaultBcg} alt="desk" className="portfolio-right__project-big-foto"/>
+											<img src={images[1] || this.state.defaultBcg} alt="desk" className="portfolio-right__project-big-foto"/>
 										</div>
 										<div className="col-8 col-sm-8 col-md-5 portfolio-price">
 											<div className="portfolio-price__price-title">
@@ -99,13 +118,14 @@ export default class ChosenProduct extends Component {
 												})}
 											</ul>
 											<div className="portfolio-price__price-characteristic">
-												<a href="#description">Описание</a>
-												<a href="#characteristic">Характеристики</a>
+												<button onClick={this.onButtonDescriptionClick}>Описание</button>
+												<button onClick={this.onButtonCharacteristicClick}>Характеристики</button>
 											</div>
 										</div>
 									</div>
-									<Description/>
-									<Characteristic/>
+									{this.state.showDescription ? <Description product={product}/> : null}
+
+									{this.state.showCharacteristic ? <Characteristic product={product}/> : null}
 								</div>
 							</div>											
 						</div>			

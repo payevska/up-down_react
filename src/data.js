@@ -18,6 +18,8 @@ import imgTC3 from "./images/tables/computer/table-computer-big3.png";
 import imgTC4 from "./images/tables/computer/table-computer-big4.png";
 import imgTC5 from "./images/tables/computer/table-computer-big5.png";
 import imgTC6 from "./images/tables/computer/table-computer-big6.png";
+import imgTC7 from "./images/tables/computer/table-computer-big6.png";
+import imgTC8 from "./images/tables/computer/table-computer-big6.png";
 import imgTC9 from "./images/tables/computer/table-computer-charaktaristic1.png";
 import imgTC10 from "./images/tables/computer/table-computer-charaktaristic2.png";
 
@@ -80,6 +82,17 @@ export default [
                 "Данный стол предназначен для комбинированной работы как сидя, так и стоя. Представляемая модель устанавливается на основной рабочий стол. Благодаря своим компактным размерам он легко разместится на Вашем столе даже в небольшом офисе. Расположив на верхней столешнице монитор, а на полке клавиатуру при помощи кнопки Вы можете поднять все необходимое оборудование на комфортную для вас высоту, не прилагая никаких усилий.",
             extras: [
                 "Бесплатное тестирование для Харькова"
+            ],
+            characteristics: [
+                {information: "Габариты в сложенном состоянии", figures: "860х650"},
+                {information: "Высота столешницы в сложенном виде", figures: "165мм"},
+                {information: "Высота столешницы в поднятом виде", figures: "475мм"},
+                {information: "Возможность плавной подстройки удобной высоты под свой рост в этом диапазоне", figures: "да"},
+                {information: "Размер столешницы", figures: "860х550"},
+                {information: "Размер нижней полки", figures: "640х300"},
+                {information: "Материал столешницы и полки", figures: "сосна"},
+                {information: "Блок питания 12V", figures: "в комплекте"},
+                {information: "Масса", figures: "19 кг"}
             ],
             images: [
                 {
@@ -186,7 +199,16 @@ export default [
             featured: false,
             description:
                 "Эта модель стола изготовлена из мебельной фанеры толщиной 12мм. И состоит из 6 составных частей. Для сборки не нужен никакой инструмент. Достаточно вставить необходимые детали в соответствующие пазы и стол готов к использованию. Нижняя и верхняя полка регулируются в соответствии с Вашим желанием. После работы стол просто разбирается и не занимает в сложенном виде много места.",
-            images: [
+                characteristics: [
+                    {information: "Габариты в собранном состоянии", figures: "1000х550x550"},
+                    {information: "Размер верхней полки", figures: "900х260"},
+                    {information: "Размер нижней полки", figures: "1000х275"},
+                    {information: "Диапазон регулировки верхней полки", figures: "от 435мм до 535мм"},
+                    {information: "Диапазон регулировки нижней полки", figures: "от 150мм до 315мм"},
+                    {information: "Материал столешницы и полки", figures: "фанера"},
+                    {information: "Масса", figures: "6 кг"}
+                ],
+                images: [
                 {
                     fields: {
                         file: {
@@ -239,6 +261,20 @@ export default [
                 {
                     fields: {
                         file: {
+                            url: imgTC7
+                        }
+                    }
+                },
+                {
+                    fields: {
+                        file: {
+                            url: imgTC8
+                        }
+                    }
+                },
+                {
+                    fields: {
+                        file: {
                             url: imgTC9
                         }
                     }
@@ -273,7 +309,18 @@ export default [
             featured: false,
             description:
                 "Данная подставка является трансформером и может использоваться для разных целей: как подставка для ноутбука с регулировкой высоты полки, как подставка под планшет или книгу с наклоном полки в 45 градусов. Так же можно переставить полку вниз под углом 45 градусов и ставить книги для чтения сидя.",
-            images: [
+                characteristics: [
+                    {information: "Габариты в сложенном состоянии", figures: "860х650"},
+                    {information: "Высота столешницы в сложенном виде", figures: "165мм"},
+                    {information: "Высота столешницы в поднятом виде", figures: "475мм"},
+                    {information: "Возможность плавной подстройки удобной высоты под свой рост в этом диапазоне", figures: "да"},
+                    {information: "Размер столешницы", figures: "860х550"},
+                    {information: "Размер нижней полки", figures: "640х300"},
+                    {information: "Материал столешницы и полки", figures: "сосна"},
+                    {information: "Блок питания 12V", figures: "в комплекте"},
+                    {information: "Масса", figures: "19 кг"}
+                ],
+                images: [
                 {
                     fields: {
                         file: {
