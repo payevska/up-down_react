@@ -50,7 +50,7 @@
 			margin-bottom: 42px;
 		    padding: 10px 0 51px 27px;
 		}
-		&_form-submit {
+		/* &_form-submit {
 			outline: none;
 			margin-bottom: 140px;
 			@media (min-width: 1440px) and (max-width: 1599.98px) {
@@ -66,9 +66,27 @@
 				background-color: $orange;
 				color: $white;
 			}
-		}
+		} */
 	}
 }
+
+.form-contact .btn-primary {
+	outline: none;
+	margin-bottom: 140px;
+	@media (min-width: 1440px) and (max-width: 1599.98px) {
+		margin-bottom: 40px;
+	}
+	padding: 16px 40px;
+	text-transform: none;	
+	color: $orange;
+	background-color: $white;		
+	border: 1px solid $orange;
+	&:hover {				
+		background-color: $orange;
+		color: $white;
+	}
+}
+
 .footer-input {
 	width: 100%;
 	font-size: 22px;	
@@ -252,11 +270,15 @@
 				margin-bottom: 36px;
 			    padding: 10px 0 40px 27px;
 			}
-			&_form-submit {
+			/* &_form-submit {
 				outline: none;
 				margin-bottom: 60px; 			
-			}
+			} */
 		}
+	}
+	.form-contact .btn-primary {
+		outline: none;
+		margin-bottom: 60px; 			
 	}
 }
 @include desktop {
@@ -275,10 +297,13 @@
 				margin-bottom: 36px;
 			    padding: 10px 0 40px 27px;
 			}
-			&_form-submit {
+			/* &_form-submit {
 				margin-bottom: 60px; 			
-			}
+			} */
 		}
+	}
+	.form-contact .btn-primary {
+		margin-bottom: 60px; 			
 	}
 }
 @include laptop {
@@ -302,12 +327,17 @@
 				margin-bottom: 20px;
 			    padding: 5px 0 32px 27px;
 			}
-			&_form-submit {
+			/* &_form-submit {
 				padding: 12px 30px;
 				margin-bottom: 50px;
 				font-size: 20px;							 			
-			}
+			} */
 		}
+	}
+	.form-contact .btn-primary {
+		padding: 12px 30px;
+		margin-bottom: 50px;
+		font-size: 20px; 			
 	}
 	.footer-input {
 		font-size: 16px;
@@ -337,13 +367,18 @@
 				margin-bottom: 20px;
 			    padding: 5px 0 32px 27px;
 			}
-			&_form-submit {
+			/* &_form-submit {
 				padding: 12px 30px;
 				margin-bottom: 25px;
 				font-size: 20px;							 			
-			}
+			} */
 		}
 	}
+	.form-contact .btn-primary {
+		padding: 12px 30px;
+		margin-bottom: 25px;
+		font-size: 20px;
+	}	
 	.footer-input {
 		font-size: 16px;
 	}
@@ -373,12 +408,17 @@
 				margin-bottom: 25px;
 			    padding: 5px 0 32px 27px;
 			}
-			&_form-submit {
+			/* &_form-submit {
 				font-size: 14px;
     			padding: 13px 30px;
 				margin-bottom: 25px;							 			
-			}
+			} */
 		}
+	}
+	.form-contact .btn-primary {
+		padding: 12px 30px;
+		margin-bottom: 25px;
+		font-size: 14px;
 	}
 	.footer-input {
 		font-size: 14px;
@@ -447,12 +487,17 @@
 				margin-bottom: 25px;
 			    padding: 5px 0 32px 27px;
 			}
-			&_form-submit {
+			/* &_form-submit {
 				padding: 7px 22px;
 				margin-bottom: 25px;
 				font-size: 12px;			 			
-			}
+			} */
 		}
+	}
+	.form-contact .btn-primary {
+		padding: 7px 22px;
+		margin-bottom: 25px;
+		font-size: 12px;
 	}
 	.footer-input {
 		font-size: 12px;
@@ -545,12 +590,17 @@
 				margin-bottom: 25px;
 			    padding: 5px 0 32px 27px;
 			}
-			&_form-submit {
+			/* &_form-submit {
 			    font-size: 12px;
 				padding: 7px 22px;
 				margin-bottom: 25px;							 			
-			}
+			} */
 		}
+	}
+	.form-contact .btn-primary {
+		padding: 7px 22px;
+		margin-bottom: 25px;
+		font-size: 12px;
 	}
 	.footer-input {
 		font-size: 12px;

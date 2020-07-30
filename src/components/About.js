@@ -2,6 +2,7 @@ import React from 'react'
 import {Container} from 'react-bootstrap';
 import '../styles/style.scss';
 import fotoUpDownTable from '../images/tables/actuator/table-actuator-about.png';
+import { Link } from 'react-router-dom';
 
 function About() {
     return (
@@ -24,9 +25,10 @@ function About() {
 								</div>
 								
 								<div className="block-right__box-botton-about">
-									<form>
-									<input type="button" value="Каталог" onClick='location.href="catalog.html"'/>
-									</form>
+									
+									{/* <input type="button" value="Каталог" onClick='location.href="catalog.html"'/> */}
+									<Link to={`/catalog`} className="btn-primary">Каталог</Link>
+									
 								</div>
 							</div>							
 						</div>			

@@ -24,7 +24,7 @@ function Home() {
 						</div>	
 					</div>
 					<div className="home__home-overlay">
-					<a href="/#Video-review" className="input-link">
+					<a href="/#Video-review" className="btn-primary">
 					3D обзор
 					</a>
 						{/* <input type="button" value="3D обзор" /> */}

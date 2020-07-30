@@ -130,7 +130,7 @@ class FormContact extends Component {
                     <button 
                         id="mail-submit" 
                         type="submit" 
-                        className="form-contact__form-content_form-submit">
+                        className="btn-primary">
                             Отправить
                     </button>
                     <div className="form-message"></div>

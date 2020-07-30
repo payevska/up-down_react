@@ -71,7 +71,7 @@
 	&__box-botton-about{
 		display: flex;
 		justify-content: center;
-		input {
+		/* input {
 			@extend input;
 			border: 1px solid $orange;
 			padding: 19px 53px;
@@ -80,9 +80,15 @@
 				background-color: $orange;
 				transition: 1s;
 			}				
-		}
+		} */
 	}
 }
+
+.block-right__box-botton-about .btn-primary {
+	border: 1px solid $orange;
+	padding: 19px 53px;
+}
+
 
 /* ------ media query ----------------- */
 
@@ -121,14 +127,19 @@
 			&_span-about {			
 			}
 		}
-		&__box-botton-about{
+		/* &__box-botton-about{
 			input {
 				font-size: 20px;
 				padding: 12px 30px;
 				}				
 			}
-		}
+		} */
 	}
+	.block-right__box-botton-about .btn-primary {
+		font-size: 20px;
+		padding: 12px 30px;
+	}
+}
 @include laptop {
 	.block-about  {
 		display: flex;
@@ -159,13 +170,17 @@
 			&_span-about {			
 			}
 		}
-		&__box-botton-about{
+		/* &__box-botton-about{
 			input {
 				font-size: 20px;
 				padding: 12px 30px;
 			}
-		}
-	}	
+		} */
+	}
+	.block-right__box-botton-about .btn-primary {
+		font-size: 20px;
+		padding: 12px 30px;
+	}
 }
 
 
@@ -200,12 +215,16 @@
 			&_span-about {			
 			}
 		}
-		&__box-botton-about{
+		/* &__box-botton-about{
 			input {
 				font-size: 20px;
 				padding: 12px 30px;
 			}
-		}
+		} */
+	}
+	.block-right__box-botton-about .btn-primary {
+		font-size: 20px;
+		padding: 12px 30px;
 	}
 	.table-foto-about {
 		margin-top: -70px;
@@ -244,12 +263,16 @@
 			&_span-about {			
 			}
 		}
-		&__box-botton-about{
+		/* &__box-botton-about{
 			input {
 				font-size: 14px;
-    			padding: 13px 30px;
+    			padding: 12px 30px;
 			}
-		}
+		} */
+	}
+	.block-right__box-botton-about .btn-primary {
+		font-size: 14px;
+		padding: 12px 30px;
 	}
 	.table-foto-about {
 		margin-top: -60px;
@@ -292,12 +315,16 @@
 			&_span-about {			
 			}
 		}
-		&__box-botton-about{
+		/* &__box-botton-about{
 			input {
 				font-size: 14px;
     			padding: 6px 17px;
 			}
-		}
+		} */
+	}
+	.block-right__box-botton-about .btn-primary {
+		font-size: 14px;
+		padding: 6px 17px;
 	}
 	.table-foto-about {
 		margin-top: -37px;
@@ -342,12 +369,16 @@
 				font-size: 14px;			
 			}
 		}
-		&__box-botton-about{
+		/* &__box-botton-about{
 			input {
 				font-size: 14px;
     			padding: 6px 17px;
 			}
-		}
+		} */
+	}
+	.block-right__box-botton-about .btn-primary {
+		font-size: 14px;
+		padding: 6px 17px;
 	}	
 	.table-foto-about {
 		margin-top: -37px;

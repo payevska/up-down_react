@@ -2,9 +2,9 @@ import React from 'react'
 import {Container} from 'react-bootstrap';
 import '../styles/style.scss';
 import videoUpDownTable from '../images/1080x1080_insta.mp4';
+import { Link } from 'react-router-dom';
 
 function VideoReview() {
-	/* const videoUpDownTable = <source src={upDownTable} type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'/>; */
     return (
         <>
             <section-2 id="Video-review">
@@ -21,9 +21,8 @@ function VideoReview() {
 							</video>						
 
 							<div className="box-button-review">
-								<form>
-								<input type="button" value="Характеристики" onClick='location.href="up-down-actuator.html#characteristics-actuator"'/>
-								</form>
+								{/* <input type="button" value="Характеристики" onClick='location.href="up-down-actuator.html#characteristics-actuator"'/> */}
+								<Link to={`/catalog/up-down-actuator`} className="btn-primary">Подробнее</Link>
 							</div>					
 						</div>				
 					</div>
