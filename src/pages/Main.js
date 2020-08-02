@@ -1,5 +1,4 @@
 import React from 'react'
-import {Container} from 'react-bootstrap';
 import '../styles/style.scss';
 import Home from '../components/Home';
 import VideoReview from '../components/VideoReview';

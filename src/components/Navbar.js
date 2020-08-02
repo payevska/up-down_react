@@ -1,12 +1,7 @@
 import React, { Component } from 'react';
-import {Container} from 'react-bootstrap';
-//import { Navbar } from 'react-bootstrap';
 import logo from '../images/logo/up-and-down_logotype.png';
 import { Link } from 'react-router-dom';
-//import '../styles/_header.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-//import TablesUpDown from '../pages/TablesUpDown';
-//import logoToHome from '../pages/Home'
 
 class Navbar extends Component {
     

@@ -1,9 +1,5 @@
-import React, { Component } from 'react'
-import {Container} from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import React from 'react'
 import '../styles/style.scss';
-import {ProductContext} from '../context';
-import defaultBcg from '../images/tables/actuator/table-actuator-big1.png';
 
 
 

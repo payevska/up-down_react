@@ -1,7 +1,5 @@
 import React from 'react'
-import {Container} from 'react-bootstrap';
 import iconDown from '../images/icons/button-down-home.png';
-import { Link } from 'react-router-dom';
 import '../styles/style.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 

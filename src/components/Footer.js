@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import {Container} from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import '../styles/style.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';

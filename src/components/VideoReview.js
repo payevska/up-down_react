@@ -1,5 +1,4 @@
 import React from 'react'
-import {Container} from 'react-bootstrap';
 import '../styles/style.scss';
 import videoUpDownTable from '../images/1080x1080_insta.mp4';
 import { Link } from 'react-router-dom';

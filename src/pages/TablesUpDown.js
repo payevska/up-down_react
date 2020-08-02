@@ -1,11 +1,9 @@
 import React from 'react'
-import {Container} from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import '../styles/style.scss';
 import fotoActuator from '../images/tables/actuator/table-actuator-desktop.png'
 import fotoComputer from '../images/tables/computer/table-computer-desktop.png'
 import fotoLaptop from '../images/tables/laptop/Table-laptop2.png'
-import Footer from '../components/Footer';
 
 
 function TablesUpDown() {

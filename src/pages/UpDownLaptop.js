@@ -1,14 +1,11 @@
 import React from 'react'
-import {Container} from 'react-bootstrap';
-import { Link } from 'react-router-dom';
 import '../styles/style.scss';
-import Footer from '../components/Footer';
 
 
 function UpDownLaptop() {
 	return (
 		<>
-			<section id="up-down-laptop.html" class="up-down-table">
+			{/* <section id="up-down-laptop.html" class="up-down-table">
 				<div class="container">
 					<div class="row">
 						<div class="col col-sm up-down-table-wrap">
@@ -129,7 +126,7 @@ function UpDownLaptop() {
 						</div>
 					</div>
 				</div>
-			</section>
+			</section> */}
 		</>
 	)
 }

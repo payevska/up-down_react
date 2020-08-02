@@ -51,9 +51,11 @@ $(document).ready(function(){
 
     
 
+
+
     /*carousel....  https://www.youtube.com/watch?v=casgv9Y8I1w&t=28s*/
 
-    /* document.getElementById('slider-top').onclick = sliderTop;
+    document.getElementById('slider-top').onclick = sliderTop;
     var top = -360;
 
     function sliderTop(){
@@ -75,7 +77,7 @@ $(document).ready(function(){
             top = 0;
         }
         polosa.style.top = top + 'px';
-    } */
+    }
 
     /*image portfolio-left.... http://www.web.cofp.ru/vse-o-sajtakh/
     sozdanie-sajta/javascript/jquery/154-uvelichenie-izobrazheniya-pri-nazhatii-na-nego*/ 
@@ -96,6 +98,9 @@ $(document).ready(function(){
 
 
    
+
+
+    
 
     //for portfolio select
 
@@ -124,7 +129,7 @@ $(document).ready(function(){
                 s = this.parentNode.parentNode.getElementsByTagName("select")[0];
                 h = this.parentNode.previousSibling;
                 for (i = 0; i < s.length; i++) {
-                    if (s.options[i].innerHTML == this.innerHTML) {
+                    if (s.options[i].innerHTML === this.innerHTML) {
                     s.selectedIndex = i;
                     h.innerHTML = this.innerHTML;
                     y = this.parentNode.getElementsByClassName("same-as-selected");
@@ -156,7 +161,7 @@ $(document).ready(function(){
         x = document.getElementsByClassName("select-items");
         y = document.getElementsByClassName("select-selected");
         for (i = 0; i < y.length; i++) {
-            if (elmnt == y[i]) {
+            if (elmnt === y[i]) {
               arrNo.push(i)
             } else {
               y[i].classList.remove("select-arrow-active");

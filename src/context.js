@@ -60,6 +60,12 @@ class ProductProvider extends Component {
             },this.filterProducts)
     }
 
+    /* handleClick() {
+        this.setState(prevState => ({
+            isToggleOn: !prevState.isToggleOn
+        }));
+    } */
+
     filterProducts = () => {
         let {
             products,

@@ -53,6 +53,17 @@ import imgMHCS1 from "./images/accessory/mobile-holder-wood3.png";
 import mobileHolderTron from "./images/accessory/mobile-holder-metal1.png";
 import imgMHT1 from "./images/accessory/mobile-holder-metal1.png";
 
+import legsTable from "./images/legs/legs_for_table-2.png";
+import imgLT1 from "./images/legs/legs_for_table-2.png";
+import imgLT2 from "./images/legs/legs_for_table-1.png";
+import imgLT3 from "./images/legs/legs_for_table-1.png";
+import imgLT4 from "./images/legs/legs_for_table-1.png";
+import imgLT5 from "./images/legs/legs_for_table-1.png";
+import imgLT6 from "./images/legs/legs_for_table-1.png";
+import imgLT7 from "./images/legs/legs_for_table-1.png";
+import imgLT8 from "./images/legs/legs_for_table-1.png";
+import imgLT9 from "./images/legs/legs_for_table-characteristic1.png";
+import imgLT10 from "./images/legs/legs_for_table-characteristic1.png";
 
 
 
@@ -62,14 +73,16 @@ export default [
             id: "1"
         },
         fields: {
-            name: "Стол для работы стоя и сидя Up-Down Actuator",
-            slug: "up-down-actuator",
+            name: "Стол для работы стоя и сидя",
+            slug: "Up-Down Actuator",
             type: "updown",
             price: 6000,
             minHeight: 165,
             maxHeight: 475,
             width: 860,
             depth: 650,
+            addition: "столешницы",
+            available: "под заказ",
             material: [
                 "сосна",
                 "бук",
@@ -180,8 +193,8 @@ export default [
             id: "2"
         },
         fields: {
-            name: "Стол для работы стоя Up-Down Computer",
-            slug: "up-down-computer",
+            name: "Стол для работы стоя",
+            slug: "Up-Down Computer",
             type: "updown",
             price: 1800,
             size: "1000x550x550",
@@ -193,6 +206,8 @@ export default [
             Width: 860,
             depth: 650,
             weight: "6 кг",
+            addition: "изделия",
+            available: "под заказ",
             material: ["фанера 12мм"],
             adjustHeight: true,
             testing: false,
@@ -294,8 +309,8 @@ export default [
             id: "3"
         },
         fields: {
-            name: "Стол для работы стоя Up-Down Laptop",
-            slug: "up-down-laptop",
+            name: "Подставка под ноутбук",
+            slug: "Up-Down Laptop",
             type: "updown",
             price: 850,
             size: "600x450x300",
@@ -303,6 +318,8 @@ export default [
             adjustHeightShelf: "от 155мм до 405мм",
             angleDownShelf: 45,
             weight: 3,
+            addition: "изделия",
+            available: "под заказ",
             material: ["фанера 12мм"],
             adjustHeight: true,
             testing: false,
@@ -403,13 +420,22 @@ export default [
             id: "4"
         },
         fields: {
-            name: "Подставка для ручек Square",
-            slug: "pen-holder-Square",
+            name: "Подставка для ручек",
+            slug: "Pen-holder Square",
             type: "подставка для ручек",
             price: 150,
             height: 0,
             width: 0,
             radius: 0,
+            addition: "изделия",
+            available: "под заказ",
+            material: ["фанера 12мм"],
+            characteristics: [
+                {information: "Высота", figures: "-"},
+                {information: "Ширина", figures: "-"},
+                {information: "Материал", figures: "фанера 12мм"},
+                {information: "Масса", figures: "-"}
+            ],
             featured: false,
             description: "",
             images: [
@@ -426,7 +452,71 @@ export default [
                             url: imgPH1
                         }
                     }
-                }
+                },
+                {
+                    fields: {
+                        file: {
+                            url: imgPH1
+                        }
+                    }
+                },
+                {
+                    fields: {
+                        file: {
+                            url: imgPH1
+                        }
+                    }
+                },
+                {
+                    fields: {
+                        file: {
+                            url: imgPH1
+                        }
+                    }
+                },
+                {
+                    fields: {
+                        file: {
+                            url: imgPH1
+                        }
+                    }
+                },
+                {
+                    fields: {
+                        file: {
+                            url: imgPH1
+                        }
+                    }
+                },
+                {
+                    fields: {
+                        file: {
+                            url: imgPH1
+                        }
+                    }
+                },
+                {
+                    fields: {
+                        file: {
+                            url: imgPH1
+                        }
+                    }
+                },
+                {
+                    fields: {
+                        file: {
+                            url: imgPH1
+                        }
+                    }
+                },
+                {
+                    fields: {
+                        file: {
+                            url: imgPH1
+                        }
+                    }
+                },
+
             ]
         }
     },
@@ -435,13 +525,22 @@ export default [
             id: "5"
         },
         fields: {
-            name: "Подставка для ручек Prism",
-            slug: "pen-holder-Prism",
+            name: "Подставка для ручек",
+            slug: "Pen-holder Prism",
             type: "подставка для ручек",
             price: 150,
             height: 0,
             width: 0,
             radius: 0,
+            addition: "изделия",
+            available: "под заказ",
+            material: ["фанера 12мм"],
+            characteristics: [
+                {information: "Высота", figures: "-"},
+                {information: "Ширина", figures: "-"},
+                {information: "Материал", figures: "фанера 12мм"},
+                {information: "Масса", figures: "-"}
+            ],
             featured: false,
             description: "",
             images: [
@@ -458,7 +557,70 @@ export default [
                             url: imgPHP1
                         }
                     }
-                }
+                },
+                {
+                    fields: {
+                        file: {
+                            url: imgPHP1
+                        }
+                    }
+                },
+                {
+                    fields: {
+                        file: {
+                            url: imgPHP1
+                        }
+                    }
+                },
+                {
+                    fields: {
+                        file: {
+                            url: imgPHP1
+                        }
+                    }
+                },
+                {
+                    fields: {
+                        file: {
+                            url: imgPHP1
+                        }
+                    }
+                },
+                {
+                    fields: {
+                        file: {
+                            url: imgPHP1
+                        }
+                    }
+                },
+                {
+                    fields: {
+                        file: {
+                            url: imgPHP1
+                        }
+                    }
+                },
+                {
+                    fields: {
+                        file: {
+                            url: imgPHP1
+                        }
+                    }
+                },
+                {
+                    fields: {
+                        file: {
+                            url: imgPHP1
+                        }
+                    }
+                },
+                {
+                    fields: {
+                        file: {
+                            url: imgPHP1
+                        }
+                    }
+                },
             ]
         }
     },
@@ -467,13 +629,22 @@ export default [
             id: "6"
         },
         fields: {
-            name: "Подставка для ручек Circul",
-            slug: "pen-holder-Circul",
+            name: "Подставка для ручек",
+            slug: "Pen-holder Circul",
             type: "подставка для ручек",
             price: 150,
             height: 0,
             width: 0,
             radius: 0,
+            addition: "изделия",
+            available: "под заказ",
+            material: ["фанера 12мм"],
+            characteristics: [
+                {information: "Высота", figures: "-"},
+                {information: "Ширина", figures: "-"},
+                {information: "Материал", figures: "фанера 12мм"},
+                {information: "Масса", figures: "-"}
+            ],
             featured: false,
             description: "",
             images: [
@@ -490,7 +661,70 @@ export default [
                             url: imgPHC1
                         }
                     }
-                }
+                },
+                {
+                    fields: {
+                        file: {
+                            url: imgPHC1
+                        }
+                    }
+                },
+                {
+                    fields: {
+                        file: {
+                            url: imgPHC1
+                        }
+                    }
+                },
+                {
+                    fields: {
+                        file: {
+                            url: imgPHC1
+                        }
+                    }
+                },
+                {
+                    fields: {
+                        file: {
+                            url: imgPHC1
+                        }
+                    }
+                },
+                {
+                    fields: {
+                        file: {
+                            url: imgPHC1
+                        }
+                    }
+                },
+                {
+                    fields: {
+                        file: {
+                            url: imgPHC1
+                        }
+                    }
+                },
+                {
+                    fields: {
+                        file: {
+                            url: imgPHC1
+                        }
+                    }
+                },
+                {
+                    fields: {
+                        file: {
+                            url: imgPHC1
+                        }
+                    }
+                },
+                {
+                    fields: {
+                        file: {
+                            url: imgPHC1
+                        }
+                    }
+                },
             ]
         }
     },
@@ -499,11 +733,20 @@ export default [
             id: "7"
         },
         fields: {
-            name: "Подставка под мобильный телефон Cubic",
-            slug: "mobile-holder-cubic",
+            name: "Подставка под мобильный телефон",
+            slug: "Mobile-holder Cubic",
             type: "подставка под мобильный телефон",
             price: 70,
             size: "0x0x0",
+            addition: "изделия",
+            available: "под заказ",
+            material: ["фанера 12мм"],
+            characteristics: [
+                {information: "Высота", figures: "-"},
+                {information: "Ширина", figures: "-"},
+                {information: "Материал", figures: "фанера 12мм"},
+                {information: "Масса", figures: "-"}
+            ],
             featured: false,
             description: "",
             images: [
@@ -520,7 +763,71 @@ export default [
                             url: imgMHC1
                         }
                     }
-                }
+                },
+                {
+                    fields: {
+                        file: {
+                            url: imgMHC1
+                        }
+                    }
+                },
+                {
+                    fields: {
+                        file: {
+                            url: imgMHC1
+                        }
+                    }
+                },
+                {
+                    fields: {
+                        file: {
+                            url: imgMHC1
+                        }
+                    }
+                },
+                {
+                    fields: {
+                        file: {
+                            url: imgMHC1
+                        }
+                    }
+                },
+                {
+                    fields: {
+                        file: {
+                            url: imgMHC1
+                        }
+                    }
+                },
+                {
+                    fields: {
+                        file: {
+                            url: imgMHC1
+                        }
+                    }
+                },
+                {
+                    fields: {
+                        file: {
+                            url: imgMHC1
+                        }
+                    }
+                },
+                {
+                    fields: {
+                        file: {
+                            url: imgMHC1
+                        }
+                    }
+                },
+                {
+                    fields: {
+                        file: {
+                            url: imgMHC1
+                        }
+                    }
+                },
+
             ]
         }
     },
@@ -529,11 +836,20 @@ export default [
             id: "8"
         },
         fields: {
-            name: "Подставка под мобильный телефон Cubic-slot",
-            slug: "mobile-holder-cubic-slot",
+            name: "Подставка под мобильный телефон",
+            slug: "Mobile-holder Cubic-slot",
             type: "подставка под мобильный телефон",
             price: 70,
             size: "0x0x0",
+            addition: "изделия",
+            available: "под заказ",
+            material: ["фанера 12мм"],
+            characteristics: [
+                {information: "Высота", figures: "-"},
+                {information: "Ширина", figures: "-"},
+                {information: "Материал", figures: "фанера 12мм"},
+                {information: "Масса", figures: "-"}
+            ],
             featured: false,
             description: "",
             images: [
@@ -550,7 +866,71 @@ export default [
                             url: imgMHCS1
                         }
                     }
-                }
+                },
+                {
+                    fields: {
+                        file: {
+                            url: imgMHCS1
+                        }
+                    }
+                },
+                {
+                    fields: {
+                        file: {
+                            url: imgMHCS1
+                        }
+                    }
+                },
+                {
+                    fields: {
+                        file: {
+                            url: imgMHCS1
+                        }
+                    }
+                },
+                {
+                    fields: {
+                        file: {
+                            url: imgMHCS1
+                        }
+                    }
+                },
+                {
+                    fields: {
+                        file: {
+                            url: imgMHCS1
+                        }
+                    }
+                },
+                {
+                    fields: {
+                        file: {
+                            url: imgMHCS1
+                        }
+                    }
+                },
+                {
+                    fields: {
+                        file: {
+                            url: imgMHCS1
+                        }
+                    }
+                },
+                {
+                    fields: {
+                        file: {
+                            url: imgMHCS1
+                        }
+                    }
+                },
+                {
+                    fields: {
+                        file: {
+                            url: imgMHCS1
+                        }
+                    }
+                },
+
             ]
         }
     },
@@ -559,11 +939,21 @@ export default [
             id: "9"
         },
         fields: {
-            name: "Подставка под мобильный телефон Tron",
-            slug: "mobile-holder-tron",
+            name: "Подставка под мобильный телефон",
+            slug: "Mobile-holder Tron",
             type: "подставка под мобильный телефон",
             price: 140,
             size: "0x0x0",
+            addition: "изделия",
+            available: "под заказ",
+            material: ["фанера 12мм"],
+            addition: " изделия",
+            characteristics: [
+                {information: "Высота", figures: "-"},
+                {information: "Ширина", figures: "-"},
+                {information: "Материал", figures: "фанера 12мм"},
+                {information: "Масса", figures: "-"}
+            ],
             featured: false,
             description: "",
             images: [
@@ -580,10 +970,184 @@ export default [
                             url: imgMHT1
                         }
                     }
-                }
+                },
+                {
+                    fields: {
+                        file: {
+                            url: imgMHT1
+                        }
+                    }
+                },
+                {
+                    fields: {
+                        file: {
+                            url: imgMHT1
+                        }
+                    }
+                },
+                {
+                    fields: {
+                        file: {
+                            url: imgMHT1
+                        }
+                    }
+                },
+                {
+                    fields: {
+                        file: {
+                            url: imgMHT1
+                        }
+                    }
+                },
+                {
+                    fields: {
+                        file: {
+                            url: imgMHT1
+                        }
+                    }
+                },
+                {
+                    fields: {
+                        file: {
+                            url: imgMHT1
+                        }
+                    }
+                },
+                {
+                    fields: {
+                        file: {
+                            url: imgMHT1
+                        }
+                    }
+                },
+                {
+                    fields: {
+                        file: {
+                            url: imgMHT1
+                        }
+                    }
+                },
+                {
+                    fields: {
+                        file: {
+                            url: imgMHT1
+                        }
+                    }
+                },
             ]
         }
     },
+    {
+        sys: {
+            id: "10"
+        },
+        fields: {
+            name: "Опора для стола",
+            slug: "Legs-table",
+            type: "legs",
+            price: 2000,
+            height: "под заказ",
+            width: "под заказ",
+            depth: "под заказ",
+            addition: "изделия",
+            available: "под заказ",
+            material: [
+                "профильная труба"
+            ],
+            featured: false,
+            description:
+                "",
+            extras: [
+                "изготовление по размерам заказчика"
+            ],
+            characteristics: [
+                {information: "Высота", figures: "размеры заказчика"},
+                {information: "Ширина", figures: "размеры заказчика"},
+                {information: "Глубина", figures: "размеры заказчика"},
+                {information: "Материал", figures: "профильная труба"},
+                {information: "Масса", figures: "в зависимости от размера опоры"}
+            ],
+            images: [
+                {
+                    fields: {
+                        file: {
+                            url: legsTable
+                        }
+                    }
+                },
+                {
+                    fields: {
+                        file: {
+                            url: imgLT1
+                        }
+                    }
+                },
+                {
+                    fields: {
+                        file: {
+                            url: imgLT2
+                        }
+                    }
+                },
+                {
+                    fields: {
+                        file: {
+                            url: imgLT3
+                        }
+                    }
+                },
+                {
+                    fields: {
+                        file: {
+                            url: imgLT4
+                        }
+                    }
+                },
+                {
+                    fields: {
+                        file: {
+                            url: imgLT5
+                        }
+                    }
+                },
+                {
+                    fields: {
+                        file: {
+                            url: imgLT6
+                        }
+                    }
+                },
+                {
+                    fields: {
+                        file: {
+                            url: imgLT7
+                        }
+                    }
+                },
+                {
+                    fields: {
+                        file: {
+                            url: imgLT8
+                        }
+                    }
+                },
+                {
+                    fields: {
+                        file: {
+                            url: imgLT9
+                        }
+                    }
+                },
+                {
+                    fields: {
+                        file: {
+                            url: imgLT10
+                        }
+                    }
+                }
+            ]
+        }
+    }
 ];
 
 

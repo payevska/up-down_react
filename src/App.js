@@ -1,7 +1,9 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import { Route, Switch } from "react-router-dom";
 import './styles/style.scss';
 import './fontawesome';
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
 import Navbar from './components/Navbar';
 import Error from './pages/Error';
 import Delivery from './pages/Delivery';

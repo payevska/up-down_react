@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import {Container} from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import '../styles/style.scss';
 import defaultBcg from '../images/tables/actuator/table-actuator-big1.png';
 import {ProductContext} from '../context';
 import Characteristic from '../components/Characteristic';
 import Description from '../components/Description';
+import CenterMode from '../components/CenterMode';
 
 
 export default class ChosenProduct extends Component {
@@ -57,8 +57,8 @@ export default class ChosenProduct extends Component {
             price,
 			extras,
 			material,
-			images,
-			characteristics
+			addition,
+			available
         } = product;
 		return (
 			<>
@@ -68,11 +68,13 @@ export default class ChosenProduct extends Component {
 							<div className="col col-sm up-down-table-wrap">
 								<div className="block-gallery">
 									<div className="title-section">
-										<h2 className="title-section__title-topic">{name}</h2>
+										<h2 className="title-section__title-topic">{name} {slug}</h2>
 										<div className="title-section__title-border"></div>
 									</div>	
 									<div className="block-gallery-image">
-										<div className="col-4 col-sm-4 col-md-2 portfolio-left">
+										<div className="col-4 col-sm-4 col-md-7 slider-product">
+											<CenterMode product={product}/>
+										{/* <div className="col-4 col-sm-4 col-md-2 portfolio-left">
 											<div id="slider-top" className="carousel-arrow">
 												<i className="fas fa-caret-up caret"></i>
 											</div>
@@ -94,29 +96,33 @@ export default class ChosenProduct extends Component {
 										</div>
 										<div className="col-md-5 portfolio-right">
 											<img src={images[1] || this.state.defaultBcg} alt="desk" className="portfolio-right__project-big-foto"/>
+										</div> */}
 										</div>
 										<div className="col-8 col-sm-8 col-md-5 portfolio-price">
-											<div className="portfolio-price__price-title">
-												Стол для работы стоя:
+											<div className="portfolio-price__price-info price-title">
+												{name}:
 											</div>
-											<div className="portfolio-price__price-name">
+											<div className="portfolio-price__price-info name-product">
 											{slug}
 											</div>
 											<div className="portfolio-price__price-info">
 												от <span className="price-info-spec">{price} &#8372;</span>
 											</div>
-											<div className="portfolio-price__news-info">
+											<div className="portfolio-price__price-info">
+												Наличие:  <span className="price">{available}</span>
+											</div>
+											<div className="portfolio-price__price-info news-info">
 												{extras}
 											</div>
-											<div className="portfolio-price__price-review">
-												<span className="price">Срок изготовления:</span> 10-14 рабочих дней.
+											<div className="portfolio-price__price-info">
+												Срок изготовления: <span className="price">10-14 рабочих дней.</span>
 											</div>
-											<div className="portfolio-price__name-select">Материал столешницы:</div>		
-											<ul className="extras">
-												{material.map((item, index) => {
-													return <li key={index}>- {item}</li>
-												})}
-											</ul>
+											<div className="portfolio-price__price-info">Материал {addition}:</div>		
+												<ul className="extras">
+													{material.map((item, index) => {
+														return <li key={index}>- {item}</li>
+													})}
+												</ul>
 											<div className="portfolio-price__price-characteristic">
 												<button onClick={this.onButtonDescriptionClick}>Описание</button>
 												<button onClick={this.onButtonCharacteristicClick}>Характеристики</button>

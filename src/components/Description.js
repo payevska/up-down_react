@@ -1,13 +1,8 @@
-import React, { Component } from 'react'
-import {Container} from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import React from 'react'
 import '../styles/style.scss';
-import {ProductContext} from '../context';
-import PropTypes from 'prop-types';
 
 export default function Description({ product }) {
 	const{description} = product;
-
 		
 	return (
 		<>

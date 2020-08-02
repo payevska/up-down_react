@@ -1,5 +1,4 @@
 import React from 'react'
-import {Container} from 'react-bootstrap';
 import '../styles/style.scss';
 import fotoUpDownTable from '../images/tables/actuator/table-actuator-about.png';
 import { Link } from 'react-router-dom';

@@ -1,7 +1,5 @@
 //import $ from 'jquery'
 import React, { Component } from 'react'
-import {Container} from 'react-bootstrap';
-import { Link } from 'react-router-dom';
 import '../styles/style.scss';
 
 //import serverMailPHP from '../mail.php';
