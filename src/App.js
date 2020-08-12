@@ -11,6 +11,9 @@ import Main from './pages/Main';
 import Footer from './components/Footer';
 import Products from './pages/Products';
 import ChosenProduct from './pages/ChosenProduct';
+import TablesUpDown from './pages/TablesUpDown';
+import LegsTable from './pages/LegsTable';
+import Accessories from './pages/Accessories';
 
 function App() {
   return (
@@ -19,6 +22,9 @@ function App() {
         <Switch>
           <Route exact path="/" component={Main}/>
           <Route exact path="/catalog/" component={Products}/>
+          <Route exact path="/tablesupdown/" component={TablesUpDown}/>
+          <Route exact path="/legs/" component={LegsTable}/>
+          <Route exact path="/accessories/" component={Accessories}/>
           <Route exact path="/delivery/" component={Delivery}/>
           <Route exact path="/catalog/:slug" component={ChosenProduct}/>
           <Route component={Error}/>

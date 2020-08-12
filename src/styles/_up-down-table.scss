@@ -54,6 +54,16 @@
 	height: 40px;
 }
 
+.slider-product .slick-prev::before,
+.slider-product .slick-next::before {
+    opacity: 0.4;
+    color: #1b255d;
+}
+
+.slider-product .slick-prev:hover::before,
+.slider-product .slick-next:hover::before {
+    opacity: 0.7;
+}
 .portfolio-left {
     display: flex;
     flex-direction: column;

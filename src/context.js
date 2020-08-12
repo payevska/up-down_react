@@ -8,7 +8,9 @@ class ProductProvider extends Component {
     state = {
         products: [],
         sortedProducts: [],
-        //featuredProducts: [],
+        updownProducts: [],
+        legsProducts: [],
+        accessoriesProducts: [],
         loading: true,
         //
         type: "all",
@@ -22,12 +24,16 @@ class ProductProvider extends Component {
     componentDidMount() {
         // this.getData
         let products = this.formatData(items);
-        //let featuredProducts = products.filter(product => product.featured === true);
+        let updownProducts = products.filter(product => product.updown === true);
+        let legsProducts = products.filter(product => product.legs === true);
+        let accessoriesProducts = products.filter(product => product.accessories === true);
         let maxPrice = Math.max(...products.map(item => item.price));
 
         this.setState({
             products,
-            //featuredProducts,
+            updownProducts,
+            legsProducts,
+            accessoriesProducts,
             sortedProducts: products,
             loading: false,
             price: maxPrice,
@@ -59,12 +65,6 @@ class ProductProvider extends Component {
                 [name]: value
             },this.filterProducts)
     }
-
-    /* handleClick() {
-        this.setState(prevState => ({
-            isToggleOn: !prevState.isToggleOn
-        }));
-    } */
 
     filterProducts = () => {
         let {

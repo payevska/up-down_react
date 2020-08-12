@@ -3,10 +3,10 @@ import { ProductContext } from "../context";
 import Loading from "../components/Loading";
 import Product from "../components/Product"
 
-export default class TablesUpDown extends Component {
+export default class LegsTable extends Component {
     static contextType = ProductContext;
     render() {
-        let {loading, updownProducts: products} = this.context;
+        let {loading, legsProducts: products} = this.context;
         products = products.map(product => {
             return <Product key={product.id} product={product}/>
         })
@@ -16,7 +16,7 @@ export default class TablesUpDown extends Component {
 					<div className="row">
 						<div className="col col-sm sub-catalogue-wrap">
 							<div className="title-section">
-								<h2 className="title-section__title-topic">Столы для работы стоя</h2>
+								<h2 className="title-section__title-topic">Опоры для стола</h2>
 								<div className="title-section__title-border"></div>
 							</div>	
 							<div className="col-sm collection-box">

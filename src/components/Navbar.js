@@ -1,11 +1,14 @@
 import React, { Component } from 'react';
+import { ProductContext } from "../context";
 import logo from '../images/logo/up-and-down_logotype.png';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 class Navbar extends Component {
-    
+    static contextType = ProductContext;
+
     render() {
+        let {handleChange} = this.context;
         const elementCarpetDown = <FontAwesomeIcon icon={['fas', 'caret-down']} /* size="1x" */ className="fa-carpet-down"/>
         const elementPhone = <FontAwesomeIcon icon={['fas', 'phone']} /* size="1x" */ className="fa-phone"/>
         return (
@@ -24,8 +27,9 @@ class Navbar extends Component {
                                             {elementCarpetDown}
                                         </Link>	
                                         <div className="dropdown-content">
-                                            <Link to="/catalog/tablesupdown/">Столы для работы стоя</Link>
-                                            <Link to="/catalog/accessories">Аксессуары</Link>
+                                            <Link to={`/tablesupdown/`}>Столы для работы стоя</Link>
+                                            <Link to={`/legs/`}>Опора для стола</Link>
+                                            <Link to={`/accessories/`}>Аксессуары</Link>
                                         </div>						    	
                                     </li>
                                     <li>
@@ -50,12 +54,16 @@ class Navbar extends Component {
                                             </li>
 
                                             <li className="dropdown pop">
-                                                <Link to="catalog.html">Каталог 
+                                                <Link to={`/catalog/`}>Каталог 
                                                     <i className="fa fa-caret-down"></i>
                                                 </Link>	
                                                 <div className="dropdown-content">
-                                                    <Link to="/catalog/tablesupdownle">Столы для работы стоя</Link>
-                                                    <Link to="/catalog/accessories">Аксессуары</Link>
+                                                    <Link to={`/tablesupdown/`}>Столы для работы стоя</Link>
+                                                    <Link to={`/legs/`}>Опора для стола</Link>
+                                                    <Link to={`/accessories/`}>Аксессуары</Link>
+
+                                                    {/* <Link to={"/tablesupdown"}><TablesUpDown/></Link>
+                                        <Link to={"/accessories"}><Accessories/></Link> */}
                                                 </div>
                                             </li>
 

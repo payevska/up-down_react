@@ -1,4 +1,40 @@
-import React from 'react'
+import React, { Component } from 'react';
+import { ProductContext } from "../context";
+import Loading from "../components/Loading";
+import Product from "../components/Product"
+
+export default class Accessories extends Component {
+    static contextType = ProductContext;
+    render() {
+        let {loading, accessoriesProducts: products} = this.context;
+        products = products.map(product => {
+            return <Product key={product.id} product={product}/>
+        })
+        return (
+            <section id="accessories" className="sub-catalogue">
+				<div className="container">
+					<div className="row">
+						<div className="col col-sm sub-catalogue-wrap">
+							<div className="title-section">
+								<h2 className="title-section__title-topic">Aксессуары</h2>
+								<div className="title-section__title-border"></div>
+							</div>	
+							<div className="col-sm collection-box">
+								{loading ? <Loading/> : products}
+							</div>
+						</div>
+					</div>
+                </div>
+            </section>
+        )
+    }
+}
+
+
+
+
+
+/* import React from 'react'
 import { Link } from 'react-router-dom';
 import '../styles/style.scss';
 
@@ -103,4 +139,4 @@ function Accessories() {
 
 export default Accessories
 
-
+ */

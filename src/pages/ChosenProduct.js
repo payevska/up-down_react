@@ -74,29 +74,6 @@ export default class ChosenProduct extends Component {
 									<div className="block-gallery-image">
 										<div className="col-4 col-sm-4 col-md-7 slider-product">
 											<CenterMode product={product}/>
-										{/* <div className="col-4 col-sm-4 col-md-2 portfolio-left">
-											<div id="slider-top" className="carousel-arrow">
-												<i className="fas fa-caret-up caret"></i>
-											</div>
-											<div className="portfolio-left__carousel">
-												<div id="polosa" className="portfolio-left__carousel_carousel-block">		
-													<div className="carousel-foto">
-														 <img src={images.map((item,index) => {
-															return (
-																<img key={index} src={item} alt={name}/>
-															);
-														})}
-														alt="desk" className="carousel-foto__fotoProject"/>
-													</div>
-												</div>
-											</div>
-											<div id="slider-bottom" className="carousel-arrow">
-												<i className="fas fa-caret-down caret"></i>
-											</div>
-										</div>
-										<div className="col-md-5 portfolio-right">
-											<img src={images[1] || this.state.defaultBcg} alt="desk" className="portfolio-right__project-big-foto"/>
-										</div> */}
 										</div>
 										<div className="col-8 col-sm-8 col-md-5 portfolio-price">
 											<div className="portfolio-price__price-info price-title">

@@ -75,7 +75,7 @@ export default [
         fields: {
             name: "Стол для работы стоя и сидя",
             slug: "Up-Down Actuator",
-            type: "updown",
+            type: "столы для работы стоя",
             price: 6000,
             minHeight: 165,
             maxHeight: 475,
@@ -90,7 +90,7 @@ export default [
             ],
             adjustHeight: true,
             testing: true,
-            featured: false,
+            updown: true,
             description:
                 "Данный стол предназначен для комбинированной работы как сидя, так и стоя. Представляемая модель устанавливается на основной рабочий стол. Благодаря своим компактным размерам он легко разместится на Вашем столе даже в небольшом офисе. Расположив на верхней столешнице монитор, а на полке клавиатуру при помощи кнопки Вы можете поднять все необходимое оборудование на комфортную для вас высоту, не прилагая никаких усилий.",
             extras: [
@@ -195,7 +195,7 @@ export default [
         fields: {
             name: "Стол для работы стоя",
             slug: "Up-Down Computer",
-            type: "updown",
+            type: "столы для работы стоя",
             price: 1800,
             size: "1000x550x550",
             sizeTopShelf: "900x260",
@@ -211,7 +211,7 @@ export default [
             material: ["фанера 12мм"],
             adjustHeight: true,
             testing: false,
-            featured: false,
+            updown: true,
             description:
                 "Эта модель стола изготовлена из мебельной фанеры толщиной 12мм. И состоит из 6 составных частей. Для сборки не нужен никакой инструмент. Достаточно вставить необходимые детали в соответствующие пазы и стол готов к использованию. Нижняя и верхняя полка регулируются в соответствии с Вашим желанием. После работы стол просто разбирается и не занимает в сложенном виде много места.",
                 characteristics: [
@@ -311,7 +311,7 @@ export default [
         fields: {
             name: "Подставка под ноутбук",
             slug: "Up-Down Laptop",
-            type: "updown",
+            type: "столы для работы стоя",
             price: 850,
             size: "600x450x300",
             sizeShelf: "600x300",
@@ -323,7 +323,7 @@ export default [
             material: ["фанера 12мм"],
             adjustHeight: true,
             testing: false,
-            featured: false,
+            updown: true,
             description:
                 "Данная подставка является трансформером и может использоваться для разных целей: как подставка для ноутбука с регулировкой высоты полки, как подставка под планшет или книгу с наклоном полки в 45 градусов. Так же можно переставить полку вниз под углом 45 градусов и ставить книги для чтения сидя.",
                 characteristics: [
@@ -436,7 +436,7 @@ export default [
                 {information: "Материал", figures: "фанера 12мм"},
                 {information: "Масса", figures: "-"}
             ],
-            featured: false,
+            accessories: true,
             description: "",
             images: [
                 {
@@ -541,7 +541,7 @@ export default [
                 {information: "Материал", figures: "фанера 12мм"},
                 {information: "Масса", figures: "-"}
             ],
-            featured: false,
+            accessories: true,
             description: "",
             images: [
                 {
@@ -645,7 +645,7 @@ export default [
                 {information: "Материал", figures: "фанера 12мм"},
                 {information: "Масса", figures: "-"}
             ],
-            featured: false,
+            accessories: true,
             description: "",
             images: [
                 {
@@ -747,7 +747,7 @@ export default [
                 {information: "Материал", figures: "фанера 12мм"},
                 {information: "Масса", figures: "-"}
             ],
-            featured: false,
+            accessories: true,
             description: "",
             images: [
                 {
@@ -850,7 +850,7 @@ export default [
                 {information: "Материал", figures: "фанера 12мм"},
                 {information: "Масса", figures: "-"}
             ],
-            featured: false,
+            accessories: true,
             description: "",
             images: [
                 {
@@ -954,7 +954,7 @@ export default [
                 {information: "Материал", figures: "фанера 12мм"},
                 {information: "Масса", figures: "-"}
             ],
-            featured: false,
+            accessories: true,
             description: "",
             images: [
                 {
@@ -1044,7 +1044,7 @@ export default [
         fields: {
             name: "Опора для стола",
             slug: "Legs-table",
-            type: "legs",
+            type: "опора для стола",
             price: 2000,
             height: "под заказ",
             width: "под заказ",
@@ -1054,7 +1054,7 @@ export default [
             material: [
                 "профильная труба"
             ],
-            featured: false,
+            legs: true,
             description:
                 "",
             extras: [
