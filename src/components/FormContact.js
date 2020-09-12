@@ -1,12 +1,54 @@
-//import $ from 'jquery'
 import React, { Component } from 'react'
 import '../styles/style.scss';
+//import {msg} from '../nodemailerFile';
+//import { msg } from "express";
+
+
+function FormContact({msg}) {
+  return (
+    <div className="contact">
+      {/* {{msg}} */}
+      <form action="send" method="POST"  id="formMessage" className="form-contact__form-content">
+          <input 
+              id="mail-name" 
+              type="text" 
+              className="form-contact__form-content_form-name footer-input" 
+              placeholder="Имя" 
+          />
+          <input 
+              id="mail-email" 
+              type="email" 
+              className="form-contact__form-content_form-email footer-input" 
+              placeholder="Электронный адресс"
+          />
+          <textarea 
+              id="mail-message" 
+              name="message" 
+              className="form-contact__form-content_form-message footer-input"
+              placeholder="Сообщение">
+          </textarea>
+          <button 
+              id="mail-submit" 
+              type="submit" 
+              className="btn-primary">
+                  Отправить
+          </button>
+          <div className="form-message"></div>
+      </form>
+    </div>
+  )
+}
+
+export default FormContact
+  
+
+
 
 //import serverMailPHP from '../mail.php';
 //import '../js/script';
 
 
-const emailRegex = RegExp(
+/* const emailRegex = RegExp(
     /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
 );
 
@@ -138,7 +180,7 @@ class FormContact extends Component {
     }
 }
 
-export default FormContact
+export default FormContact */
 
 
 /* const emailRegex = RegExp(

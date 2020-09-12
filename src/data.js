@@ -56,14 +56,14 @@ import imgMHT1 from "./images/accessory/mobile-holder-metal1.png";
 import legsTable from "./images/legs/legs_for_table-2.png";
 import imgLT1 from "./images/legs/legs_for_table-2.png";
 import imgLT2 from "./images/legs/legs_for_table-1.png";
-import imgLT3 from "./images/legs/legs_for_table-1.png";
+import imgLT3 from "./images/legs/legs_for_table-3.png";
 import imgLT4 from "./images/legs/legs_for_table-1.png";
 import imgLT5 from "./images/legs/legs_for_table-1.png";
 import imgLT6 from "./images/legs/legs_for_table-1.png";
 import imgLT7 from "./images/legs/legs_for_table-1.png";
 import imgLT8 from "./images/legs/legs_for_table-1.png";
 import imgLT9 from "./images/legs/legs_for_table-characteristic1.png";
-import imgLT10 from "./images/legs/legs_for_table-characteristic1.png";
+import imgLT10 from "./images/legs/legs_for_table-characteristic2.png";
 
 
 
